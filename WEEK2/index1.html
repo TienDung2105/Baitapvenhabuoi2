@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Logis — Hero Landing</title>
+  <!-- Lưu ý: Chỉ HTML, chưa có CSS -->
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header id="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo" id="logo">
+        <a href="#" aria-label="Trang chủ">
+          <!-- Logo text hoặc hình sẽ được style bằng CSS -->
+          <span class="logo-text">Logis</span>
+        </a>
+      </div>
+
+      <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a href="#dropdown">Dropdown</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn-quote" href="#quote">Get a Quote</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <main id="main" role="main">
+    <section id="hero" aria-label="Hero - Lightning Fast Delivery">
+      <div class="container hero-inner">
+        <!-- Left column: heading, paragraph, search, stats -->
+        <div class="hero-left" id="hero-left">
+          <h1 class="hero-title">
+            Your Lightning Fast Delivery<br />
+            Partner
+          </h1>
+
+          <p class="hero-subtitle">
+            Facere distinctio molestiae nisi fugit tenetur repellat non praesentium
+            nesciunt optio quis sit odio nemo quisquam. Eius quos reiciendis eum vel
+            eum voluptatem eum maiores eaque id optio ullam occaecati odio est
+            possimus vel reprehenderit.
+          </p>
+
+          <!-- Search form (non-functional without JS/backend) -->
+          <form id="zip-search" action="#" method="get" role="search" aria-label="Tìm kiếm theo ZIP hoặc City">
+            <label for="zip-input" class="visually-hidden">Nhập ZIP code hoặc thành phố</label>
+            <div class="search-group">
+              <input
+                id="zip-input"
+                name="q"
+                type="text"
+                placeholder="Your ZIP code or City. e.g. New York"
+                aria-label="Your ZIP code or City"
+              />
+              <button type="submit" aria-label="Search">Search</button>
+            </div>
+          </form>
+
+          <!-- Stats -->
+          <ul class="hero-stats" aria-label="Thống kê">
+            <li class="stat">
+              <strong class="stat-number">232</strong>
+              <span class="stat-label">Clients</span>
+            </li>
+            <li class="stat">
+              <strong class="stat-number">521</strong>
+              <span class="stat-label">Projects</span>
+            </li>
+            <li class="stat">
+              <strong class="stat-number">1453</strong>
+              <span class="stat-label">Support</span>
+            </li>
+            <li class="stat">
+              <strong class="stat-number">32</strong>
+              <span class="stat-label">Workers</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right column: illustration / image -->
+        <aside class="hero-right" id="hero-visual" aria-hidden="false">
+          <!-- Placeholder SVG illustration (bản quyền free, dùng để demo). Thay bằng <img> nếu muốn dùng ảnh ngoài -->
+          <svg
+            width="560"
+            height="420"
+            viewBox="0 0 560 420"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Illustration of map pin and delivery"
+          >
+            <title>Map pin and delivery illustration</title>
+            <rect width="100%" height="100%" fill="none"></rect>
+            <!-- simple shapes as placeholder -->
+            <circle cx="320" cy="120" r="80" fill="#ffffff" stroke="#000000" stroke-opacity="0.08" />
+            <path d="M360 60 C360 30, 420 30, 420 60 C420 90, 360 90, 360 60 Z" fill="#0A5BFF" opacity="0.9" />
+            <rect x="380" y="180" width="120" height="60" rx="8" ry="8" fill="#F0F4F8" stroke="#000" stroke-opacity="0.05" />
+            <circle cx="420" cy="110" r="12" fill="#ffffff" />
+            <!-- person simplified -->
+            <ellipse cx="480" cy="260" rx="18" ry="26" fill="#FFD7B5"></ellipse>
+            <rect x="460" y="280" width="40" height="70" rx="10" fill="#0A5BFF" />
+          </svg>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer minimal -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2025</span> Logis. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
