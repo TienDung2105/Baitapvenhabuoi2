@@ -1,0 +1,53 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;       /* căn giữa dọc */
+      justify-content: center;   /* căn giữa ngang */
+      background-color: #e3f2fd; /* nền tổng thể */
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      width: 400px;
+      border: 3px solid #0077b6;
+      border-radius: 16px;
+      overflow: hidden; /* để bo góc ảnh và nền gọn */
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    /* Phần trên (ảnh + màu nền sáng) */
+    .box-top {
+      background: #ffffff;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .box-top img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover; /* ảnh tự co để vừa khung */
+      border-radius: 12px;
+    }
+
+    /* Phần dưới (chữ + nền màu khác) */
+    .box-bottom {
+      background: linear-gradient(180deg, #90e0ef, #00b4d8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .box-bottom h2 {
+      margin-bottom: 8px;
+    }
+
+    .box-bottom p {
+      font-size: 15px;
+      line-height: 1.5;
+    }

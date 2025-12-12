@@ -1,0 +1,107 @@
+* {
+  /* Xóa margin, padding và border mặc định */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 215, 240);
+}
+.card {
+  background-color: #9b6081;
+  color: #f6ebf2;
+  padding: 24px;
+  border-radius: 20px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.4);
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #f6ebf2;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.img :hover{
+    transform: translate(-2px);
+    box-shadow: #880909;
+}
+
+.content h2{
+    color: rgb(255, 72, 0);
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.one{
+    color: yellow;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.two{
+    color: rgb(20, 11, 138) ;
+    font-size:18px ;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.social a{
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3 ease;
+}
+.social a:hover {
+  background-color: #ff69b4;   
+  color: white;                
+  transform: scale(1.2);       
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+

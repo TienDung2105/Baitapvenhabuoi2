@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(243, 235, 220);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px; /* tăng padding */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.web {
+  background-color: #fff;
+  margin: auto;
+  padding: 40px; /* tăng padding trong khối */
+  width: 800px; /* rộng hơn */
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.img {
+  padding: 15px;
+  text-align: center;
+}
+
+.img img {
+  border-radius: 12px;
+  border: 2px solid #aaa;
+  max-width: 90%; /* ảnh to nhưng vẫn vừa khung */
+}
+
+.one h2 {
+  color: rgb(51, 150, 243);
+  font-size: 42px; /* to hơn */
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.hihi {
+  color: rgb(66, 66, 66);
+  font-size: 28px; /* to hơn */
+  margin: 12px 0;
+}
+
+.price {
+  color: rgb(16, 192, 0);
+  font-size: 30px; /* to hơn */
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.star {
+  color: rgb(219, 206, 26);
+  font-size: 28px; /* to hơn */
+  margin: 12px 0;
+}
+
+.hi {
+  color: #333;
+  font-size: 22px; /* to hơn */
+}
+
+.tags {
+  color: rgba(0,0,0,0.789);
+  font-size: 20px; /* to hơn */
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag {
+  border-radius: 20px;
+  background-color: rgba(75, 205, 252, 0.2);
+  padding: 10px 16px; /* to hơn */
+  font-size: 22px; /* to hơn */
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: rgba(75, 205, 252, 0.35);
+  transform: translateY(-2px);
+}
