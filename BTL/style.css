@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0)
+  );
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;                 /* khoảng cách ảnh & chữ */
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6500;
+}
+
+.logo img {
+  height: 32px;             /* chỉnh to/nhỏ logo */
+  width: auto;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+nav a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #ff6500;
+}
+
+/* ===== BANNER FULL MÀN HÌNH ===== */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;              /* FULL CHIỀU CAO MÀN HÌNH */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* KHÔNG MÉO ẢNH */
+  object-position: center;    /* CĂN GIỮA ĐẸP */
+}
+
+/* LỚP PHỦ TỐI */
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.85)
+  );
+}
+
+/* TEXT TRÊN BANNER */
+.banner-text {
+  position: absolute;
+  bottom: 90px;
+  left: 80px;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* CONTENT */
+.container {
+  padding: 60px 80px;
+}
+
+/* SECTION */
+.movie-section {
+  margin-bottom: 60px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-btn button {
+  background: #222;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.movie-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  padding: 60px 0;
+}
+
+.movie-card {
+  flex: 0 0 calc((100% - 100px) / 6); /* 6 phim / hàng */
+}
+
+
+/* POSTER */
+.movie-poster {
+  aspect-ratio: 2 / 3;
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #111;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.movie-card:hover .movie-poster {
+  transform: scale(1.18) translateY(-18px);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* NAME */
+.movie-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* HOVER */
+.movie-hover {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95) 10%,
+    rgba(0,0,0,0.6) 40%,
+    rgba(0,0,0,0) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.movie-card:hover .movie-hover {
+  opacity: 1;
+}
+
+.play {
+  background: #ff6500;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}

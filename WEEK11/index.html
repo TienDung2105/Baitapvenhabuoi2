@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop Công Nghệ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Shop Công Nghệ HIT</h1>
+  <div class="cart-icon">
+    🛍️ <span id="cart-count">0</span>
+  </div>
+</header>
+
+<div class="container">
+  <div id="product-list"></div>
+  <div class="cart">
+    <h2>Giỏ hàng</h2>
+    <div id="cart-list" class="empty">Giỏ hàng trống</div>
+    <div id="cart-total" class="total"></div>
+    <button class="checkout" onclick="checkout()">Thanh toán</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
