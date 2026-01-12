@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phim lẻ | FPT Play</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome (icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+
+  <!-- BÊN TRÁI: LOGO + MENU -->
+  <div class="header-left">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://haitrieu.com/wp-content/uploads/2022/03/Icon-FPT-Play1.png" alt="FPT Play">
+        <span>FPT Play</span>
+      </a>
+    </div>
+
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#">Phim bộ</a>
+      <a class="active" href="#">Phim lẻ</a>
+      <a href="#">Anime</a>
+    </nav>
+  </div>
+
+  <!-- BÊN PHẢI: ICON + NÚT -->
+  <div class="header-right">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-bell"></i>
+    <button class="vip-btn">Mua gói</button>
+    <button class="login-btn">Đăng nhập</button>
+  </div>
+
+</header>
+
+<!-- ===== BANNER FULL MÀN HÌNH ===== -->
+<section class="banner">
+  <img src="https://picsum.photos/1920/1080?movie" alt="Banner">
+  <div class="banner-text">
+    <h1>Phim lẻ đặc sắc</h1>
+    <p>Kho phim chọn lọc dành cho bạn</p>
+  </div>
+</section>
+
+<!-- ===== DANH SÁCH PHIM ===== -->
+<div class="container" id="movieContainer"></div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+
+    <!-- LEFT -->
+    <div class="footer-col footer-brand">
+      <p class="company-name">Công ty Cổ phần Viễn Thông FPT</p>
+
+      <div class="footer-logo">
+        <img src="https://haitrieu.com/wp-content/uploads/2022/03/Icon-FPT-Play1.png" alt="">
+        <span>FPT Play</span>
+      </div>
+
+      <div class="footer-cert">
+        <img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png" alt="DMCA">
+        <img src="https://www.fptplay.vn/images/bocongthuong.png" alt="Bộ Công Thương">
+      </div>
+    </div>
+
+    <!-- COL 1 -->
+    <div class="footer-col">
+      <h4>Về FPT Play</h4>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Các gói dịch vụ</a>
+      <a href="#">Trung tâm hỗ trợ</a>
+      <a href="#">Thông tin</a>
+    </div>
+
+    <!-- COL 2 -->
+    <div class="footer-col">
+      <h4>Dịch vụ</h4>
+      <a href="#">Quảng cáo</a>
+      <a href="#">Mua gói</a>
+      <a href="#">Bảo hành</a>
+    </div>
+
+    <!-- COL 3 -->
+    <div class="footer-col">
+      <h4>Quy định</h4>
+      <a href="#">Điều khoản sử dụng</a>
+      <a href="#">Chính sách thanh toán</a>
+      <a href="#">Chính sách bảo mật</a>
+      <a href="#">Cam kết quyền riêng tư</a>
+    </div>
+
+    <!-- COL 4 -->
+    <div class="footer-col">
+      <h4>Thông tin</h4>
+      <p>Liên hệ</p>
+      <p>Hotline: 19006600</p>
+      <p>Email: hotrofptplay@fpt.com</p>
+
+      <div class="social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <div class="footer-info">
+      <p>Người đại diện: Ông Hoàng Việt Anh</p>
+      <p>Trụ sở: Tầng 8, tòa nhà FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội</p>
+      <p>Số giấy chứng nhận đăng ký kinh doanh: 0101778163 do Sở Kế hoạch Đầu tư Thành Phố Hà Nội cấp vào ngày 28/07/2005</p>
+      <p>Giấy phép Cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng Internet số 377/GP-BTTTT cấp ngày 10/10/2023.</p>
+    </div>
+
+    <div class="footer-app">
+      <p>Tải ứng dụng trên</p>
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+    </div>
+  </div>
+</footer>
+
+
+<!-- JS -->
+<script src="movies.js"></script>
+</body>
+</html>
