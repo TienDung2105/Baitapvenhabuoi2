@@ -1,6 +1,6 @@
 const movieData = [
   {
-    title: "🔥 Top 10 phim lẻ",
+    title: "Top 10 phim lẻ",
     movies: [
       {
         name: "Bố Già",
@@ -60,7 +60,7 @@ const movieData = [
   },
 
   {
-    title: "🎙️ Phim lẻ thuyết minh - lồng tiếng",
+    title: "Phim lẻ thuyết minh - lồng tiếng",
     movies: [
       {
         name: "Mối Tình Giáng Sinh",
@@ -120,7 +120,7 @@ const movieData = [
   },
   /* ===== ẤM ÁP BÊN NGƯỜI THÂN ===== */
 {
-  title: "❤️ Ấm áp bên người thân",
+  title: "Ấm áp bên người thân",
   movies: [
     {
       name: "Hai Muối",
@@ -180,7 +180,7 @@ const movieData = [
 },
 /* ===== DÀNH RIÊNG CHO BẠN ===== */
 {
-  title: "⭐ Dành riêng cho bạn",
+  title: "Dành riêng cho bạn",
   movies: [
     {
       name: "Làm Giàu Với Ma: Cuộc Chiến Hột Xoàn",
@@ -240,7 +240,7 @@ const movieData = [
 },
 /* ===== XEM NHIỀU NHẤT THÁNG ===== */
 {
-  title: "🔥 Xem nhiều nhất tháng",
+  title: "Xem nhiều nhất tháng",
   movies: [
     {
       name: "Thám Tử Kiên: Kỳ Án Không Đầu",
@@ -300,7 +300,7 @@ const movieData = [
 },
 /* ===== PHIM ĐIỆN ẢNH HAY NHẤT ===== */
 {
-  title: "🎬 Phim điện ảnh hay nhất",
+  title: "Phim điện ảnh hay nhất",
   movies: [
     {
       name: "Bố Già",
@@ -360,7 +360,7 @@ const movieData = [
 },
 /* ===== PHIM HÀNH ĐỘNG GAY CẤN ===== */
 {
-  title: "💥 Phim hành động gay cấn",
+  title: "Phim hành động gay cấn",
   movies: [
     {
       name: "Thế Giới Khủng Long: Lãnh Địa",
@@ -420,7 +420,7 @@ const movieData = [
 },
 /* ===== PHIM TÂM LÝ ĐỈNH CAO ===== */
 {
-  title: "🧠 Phim tâm lý đỉnh cao",
+  title: "Phim tâm lý đỉnh cao",
   movies: [
     {
       name: "Những Người Khốn Khổ",
@@ -480,7 +480,7 @@ const movieData = [
 },
 /* ===== PHIM KINH DỊ – GIẬT GÂN ===== */
 {
-  title: "👻 Phim kinh dị – giật gân",
+  title: "Phim kinh dị – giật gân",
   movies: [
     {
       name: "Thám Tử Kiên: Kỳ Án Không Đầu",
@@ -540,7 +540,7 @@ const movieData = [
 },
 /* ===== PHIM HÀI HƯỚC ĐẶC SẮC ===== */
 {
-  title: "😂 Phim hài hước đặc sắc",
+  title: "Phim hài hước đặc sắc",
   movies: [
     {
       name: "Nhà Gia Tiên",
@@ -600,7 +600,7 @@ const movieData = [
 },
 /* ===== PHIM TÌNH CẢM LÃNG MẠN ===== */
 {
-  title: "💖 Phim tình cảm lãng mạn",
+  title: "Phim tình cảm lãng mạn",
   movies: [
     {
       name: "Cô Dâu Đại Chiến",
@@ -660,7 +660,7 @@ const movieData = [
 },
 /* ===== PHIM HOẠT HÌNH VUI NHỘN ===== */
 {
-  title: "🐼 Phim hoạt hình vui nhộn",
+  title: "Phim hoạt hình vui nhộn",
   movies: [
     {
       name: "Kung Fu Gấu Trúc",
@@ -720,7 +720,7 @@ const movieData = [
 },
 /* ===== PHIM TÀI LIỆU CHÂN THỰC ===== */
 {
-  title: "🎬 Phim tài liệu chân thực",
+  title: "Phim tài liệu chân thực",
   movies: [
     {
       name: "Siêu Sao Điện Ảnh Hollywood: Brad Pitt",
@@ -780,7 +780,7 @@ const movieData = [
 },
 /* ===== ĐIỆN ẢNH VIỆT ===== */
 {
-  title: "🇻🇳 Điện ảnh Việt",
+  title: "Điện ảnh Việt",
   movies: [
     {
       name: "Làm Giàu Với Ma: Cuộc Chiến Hột Xoàn",
@@ -840,7 +840,7 @@ const movieData = [
 },
 /* ===== MÙA HÈ CỨ RƠI ===== */
 {
-  title: "🌧️ Mùa hè cứ rơi",
+  title: "Mùa hè cứ rơi",
   movies: [
     {
       name: "Quả Tim Máu",
@@ -900,7 +900,7 @@ const movieData = [
 },
 /* ===== QUYỀN CƯỚC VÔ TÌNH ===== */
 {
-  title: "🥊 Quyền cước vô tình",
+  title: "Quyền cước vô tình",
   movies: [
     {
       name: "Dòng Máu Anh Hùng",
@@ -960,7 +960,7 @@ const movieData = [
 },
 /* ===== HƯƠNG CẢNG MỘT THỜI HOÀNG KIM ===== */
 {
-  title: "🌆 Hương Cảng một thời hoàng kim",
+  title: "Hương Cảng một thời hoàng kim",
   movies: [
     {
       name: "Xé Gió",
@@ -1020,7 +1020,7 @@ const movieData = [
 },
 /* ===== HƯƠNG CẢNG MỘT THỜI HOÀNG KIM ===== */
 {
-  title: "🌆 Hương Cảng một thời hoàng kim",
+  title: "Hương Cảng một thời hoàng kim",
   movies: [
     {
       name: "Mai Lan Phương",
@@ -1033,7 +1033,7 @@ const movieData = [
     },
     {
       name: "Bao La Vùng Trời",
-      img: "https://static.wikia.nocookie.net/voiceacting/images/d/d0/%C3%81p_ph%C3%ADch_phim_Bao_la_v%C3%B9ng_tr%E1%BB%9Di.webp/revision/latest?cb=20221212012704&path-prefix=vi",
+      img: "https://img.ophim.live/uploads/movies/bao-la-vung-troi-1-thumb.jpg",
       rating: 4.1,
       year: 2007,
       duration: "1 giờ 58 phút",
@@ -1080,7 +1080,7 @@ const movieData = [
 },
 /* ===== MÙA THU LỘNG GIÓ ===== */
 {
-  title: "🍂 Mùa thu lộng gió",
+  title: "Mùa thu lộng gió",
   movies: [
     {
       name: "Kẻ Du Hành Trên Mây",
@@ -1140,7 +1140,7 @@ const movieData = [
 },
 /* ===== PHỤ NỮ TRÊN MÀN BẠC ===== */
 {
-  title: "👩‍🦰 Phụ nữ trên màn bạc",
+  title: "Phụ nữ trên màn bạc",
   movies: [
     {
       name: "Kẻ Trộm Siêu Thị",
@@ -1200,7 +1200,7 @@ const movieData = [
 },
 /* ===== GIẢI MÃ KÌ ÁN ===== */
 {
-  title: "🕵️‍♂️ Giải mã kì án",
+  title: "Giải mã kì án",
   movies: [
     {
       name: "Hồ Sơ Bí Mật",
