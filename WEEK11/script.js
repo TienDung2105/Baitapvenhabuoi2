@@ -43,7 +43,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Ghế Gaming Xpanse", // sửa lỗi chính tả
+    name: "Ghế Gaming Xpanse", 
     category: "Ghế",
     price: 3990000,
     img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRmShhkGbmvfeKhPionXZ8l48X1yEoZUApZJKuIxtH6N_24Et9Wq6X5VF4M2Y3nZBEq_IpdllunrkxJ479nPRTBvqg4rkYTVqhMoUWGYIJwUujbRRpBLqiMhLcZ6xrj-kajioIQ7w&usqp=CAc"

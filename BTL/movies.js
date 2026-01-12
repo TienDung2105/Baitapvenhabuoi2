@@ -124,7 +124,7 @@ const movieData = [
   movies: [
     {
       name: "Hai Muối",
-      img: "data:image/jpeg;base64,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",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/hai-muoi-19103-thumb.webp",
       rating: 4.4,
       year: 2023,
       duration: "1 giờ 55 phút",
@@ -243,7 +243,7 @@ const movieData = [
   title: "🔥 Xem nhiều nhất tháng",
   movies: [
     {
-      name: "Thám Tử Kiên",
+      name: "Thám Tử Kiên: Kỳ Án Không Đầu",
       img: "https://rophimz.io/wp-content/uploads/2025/11/tham-tu-kien-ky-an-khong-dau-1750-thumb.webp",
       rating: 4.8,
       year: 2025,
@@ -297,8 +297,967 @@ const movieData = [
       desc: "Tình cảm – học đường với những rung động đầu đời."
     }
   ]
-}
-
+},
+/* ===== PHIM ĐIỆN ẢNH HAY NHẤT ===== */
+{
+  title: "🎬 Phim điện ảnh hay nhất",
+  movies: [
+    {
+      name: "Bố Già",
+      img: "https://baoquocte.vn/stores/news_dataimages/kimchung/032021/13/15/phim-bo-gia-cua-tran-thanh-hay-nhung-chua-phai-tuyet-tac.jpg",
+      rating: 4.6,
+      year: 2021,
+      duration: "2 giờ 8 phút",
+      country: "Việt Nam",
+      desc: "Phim điện ảnh gia đình gây xúc động mạnh, doanh thu kỷ lục."
+    },
+    {
+      name: "Cưới Ma Giải Hạn",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/cuoi-ma-giai-han-4852-thumb.webp",
+      rating: 4.0,
+      year: 2023,
+      duration: "1 giờ 50 phút",
+      country: "Việt Nam",
+      desc: "Kinh dị – tâm linh với nghi thức cưới ma rùng rợn."
+    },
+    {
+      name: "Cô Dâu Hào Môn",
+      img: "https://tse2.mm.bing.net/th/id/OIP.Zp1YLyuFh3sr0HYHAgkh0QHaJQ",
+      rating: 3.8,
+      year: 2024,
+      duration: "1 giờ 52 phút",
+      country: "Việt Nam",
+      desc: "Cuộc sống xa hoa và những bí mật trong gia đình giàu có."
+    },
+    {
+      name: "Khi Con Là Nhà",
+      img: "https://kenh14cdn.com/thumb_w/660/2017/npt7081a-1510597677988-1514398179851.jpg",
+      rating: 4.2,
+      year: 2022,
+      duration: "1 giờ 47 phút",
+      country: "Việt Nam",
+      desc: "Hành trình hàn gắn gia đình đầy cảm xúc."
+    },
+    {
+      name: "Gặp Lại Chị Bầu",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/gap-lai-chi-bau-10429-thumb.webp",
+      rating: 4.1,
+      year: 2023,
+      duration: "1 giờ 55 phút",
+      country: "Việt Nam",
+      desc: "Tình huống éo le giữa cảm xúc, đạo đức và gia đình."
+    },
+    {
+      name: "Âm Dương Lộ",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/am-duong-lo-16911-thumb.webp",
+      rating: 4.0,
+      year: 2024,
+      duration: "1 giờ 49 phút",
+      country: "Việt Nam",
+      desc: "Phim kinh dị – hành trình bước giữa ranh giới âm dương."
+    }
+  ]
+},
+/* ===== PHIM HÀNH ĐỘNG GAY CẤN ===== */
+{
+  title: "💥 Phim hành động gay cấn",
+  movies: [
+    {
+      name: "Thế Giới Khủng Long: Lãnh Địa",
+      img: "https://upload.wikimedia.org/wikipedia/vi/8/8b/Th%E1%BA%BF_gi%E1%BB%9Bi_kh%E1%BB%A7ng_long_-_L%C3%A3nh_%C4%91%E1%BB%8Ba.jpg",
+      rating: 4.3,
+      year: 2022,
+      duration: "2 giờ 27 phút",
+      country: "Mỹ",
+      desc: "Khủng long và con người cùng tồn tại trong thế giới hỗn loạn."
+    },
+    {
+      name: "Thợ Săn: Cuộc Chiến Mùa Đông",
+      img: "https://upload.wikimedia.org/wikipedia/vi/a/ab/The_Huntsman_%E2%80%93_Winter%27s_War_poster.jpg",
+      rating: 4.0,
+      year: 2016,
+      duration: "1 giờ 54 phút",
+      country: "Mỹ",
+      desc: "Cuộc chiến khốc liệt giữa thợ săn và thế lực hắc ám."
+    },
+    {
+      name: "Trái Tim Rồng",
+      img: "https://upload.wikimedia.org/wikipedia/en/7/7f/Dragonheart_5_Poster.jpg",
+      rating: 4.1,
+      year: 2019,
+      duration: "1 giờ 45 phút",
+      country: "Mỹ",
+      desc: "Huyền thoại rồng thiêng và cuộc chiến bảo vệ vương quốc."
+    },
+    {
+      name: "Quá Nhanh Quá Nguy Hiểm 9: Huyền Thoại Tốc Độ",
+      img: "https://upload.wikimedia.org/wikipedia/vi/a/a5/Fast_9_VN_poster.jpg",
+      rating: 4.2,
+      year: 2021,
+      duration: "2 giờ 23 phút",
+      country: "Mỹ",
+      desc: "Dom Toretto đối mặt kẻ thù nguy hiểm nhất từ trước tới nay."
+    },
+    {
+      name: "Xác Ướp",
+      img: "https://upload.wikimedia.org/wikipedia/vi/a/a6/The_mummy_2017.jpg",
+      rating: 3.9,
+      year: 2017,
+      duration: "1 giờ 50 phút",
+      country: "Mỹ",
+      desc: "Cuộc phiêu lưu kinh dị với xác ướp cổ đại trỗi dậy."
+    },
+    {
+      name: "Quá Nhanh Quá Nguy Hiểm 8",
+      img: "https://upload.wikimedia.org/wikipedia/vi/2/2d/The_Fate_of_The_Furious_Theatrical_Poster.jpg",
+      rating: 4.1,
+      year: 2017,
+      duration: "2 giờ 16 phút",
+      country: "Mỹ",
+      desc: "Gia đình Fast & Furious đối đầu kẻ thù nguy hiểm toàn cầu."
+    }
+  ]
+},
+/* ===== PHIM TÂM LÝ ĐỈNH CAO ===== */
+{
+  title: "🧠 Phim tâm lý đỉnh cao",
+  movies: [
+    {
+      name: "Những Người Khốn Khổ",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/nhung-nguoi-khon-kho-3199-thumb.webp",
+      rating: 4.6,
+      year: 2012,
+      duration: "2 giờ 38 phút",
+      country: "Anh",
+      desc: "Số phận con người trong xã hội đầy bất công và hy vọng."
+    },
+    {
+      name: "Nữ Hoàng Elizabeth: Thời Đại Hoàng Kim",
+      img: "http://upload.wikimedia.org/wikipedia/en/c/c5/Elizabeth_golden_poster.jpg",
+      rating: 4.4,
+      year: 2007,
+      duration: "1 giờ 54 phút",
+      country: "Anh",
+      desc: "Chân dung quyền lực và cô độc của nữ hoàng vĩ đại."
+    },
+    {
+      name: "Downton Abbey",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/dinh-thu-downton-hoi-ket-huy-hoang-1299-thumb.webp",
+      rating: 4.7,
+      year: 2019,
+      duration: "2 giờ 2 phút",
+      country: "Anh",
+      desc: "Cuộc sống quý tộc Anh với những bí mật và biến động."
+    },
+    {
+      name: "Thảm Họa Đỉnh Everest",
+      img: "https://i1-giaitri.vnecdn.net/2015/06/05/Int-OV-Everest-Mountain-5405-1433476578.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=dHbv4fA9XemG3uH9kwk6Ew",
+      rating: 4.3,
+      year: 2015,
+      duration: "2 giờ 1 phút",
+      country: "Mỹ",
+      desc: "Cuộc chiến sinh tồn khốc liệt trên nóc nhà thế giới."
+    },
+    {
+      name: "Chị Chị Em Em 2",
+      img: "https://upload.wikimedia.org/wikipedia/vi/7/7c/ChiChiEmEm2.jpg",
+      rating: 4.0,
+      year: 2023,
+      duration: "1 giờ 55 phút",
+      country: "Việt Nam",
+      desc: "Những mối quan hệ phức tạp và bí mật đằng sau tình thân."
+    },
+    {
+      name: "Hai Muối",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/hai-muoi-19103-thumb.webp",
+      rating: 4.2,
+      year: 2024,
+      duration: "1 giờ 45 phút",
+      country: "Việt Nam",
+      desc: "Câu chuyện đời thường sâu lắng về gia đình và yêu thương."
+    }
+  ]
+},
+/* ===== PHIM KINH DỊ – GIẬT GÂN ===== */
+{
+  title: "👻 Phim kinh dị – giật gân",
+  movies: [
+    {
+      name: "Thám Tử Kiên: Kỳ Án Không Đầu",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/tham-tu-kien-ky-an-khong-dau-1750-thumb.webp",
+      rating: 4.3,
+      year: 2024,
+      duration: "1 giờ 55 phút",
+      country: "Việt Nam",
+      desc: "Vụ án rùng rợn với những bí ẩn không đầu mối."
+    },
+    {
+      name: "Mộng Du",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/mong-du-19643-thumb.webp",
+      rating: 4.1,
+      year: 2023,
+      duration: "1 giờ 42 phút",
+      country: "Việt Nam",
+      desc: "Ranh giới mong manh giữa giấc mơ và ác mộng."
+    },
+    {
+      name: "Ác Quỷ Lúc Nửa Đêm",
+      img: "https://cdn.moveek.com/storage/media/cache/short/c90a73584ce233f270b5e9a624a797a3694bd7fb.jpg",
+      rating: 4.0,
+      year: 2022,
+      duration: "1 giờ 38 phút",
+      country: "Mỹ",
+      desc: "Những thế lực hắc ám thức tỉnh khi đêm xuống."
+    },
+    {
+      name: "Exhuma: Quật Mộ Trùng Ma",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/quat-mo-trung-ma-16007-thumb.webp",
+      rating: 4.5,
+      year: 2024,
+      duration: "2 giờ 14 phút",
+      country: "Hàn Quốc",
+      desc: "Nghi lễ cổ xưa mở ra cánh cửa cho quỷ dữ."
+    },
+    {
+      name: "Quả Tim Máu",
+      img: "https://upload.wikimedia.org/wikipedia/vi/c/c9/QuatimmauPoster.jpg",
+      rating: 4.2,
+      year: 2014,
+      duration: "1 giờ 38 phút",
+      country: "Việt Nam",
+      desc: "Ám ảnh kinh hoàng xoay quanh một trái tim bí ẩn."
+    },
+    {
+      name: "Hàm Tử Thần",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/ham-tu-than-18207-thumb.webp",
+      rating: 4.1,
+      year: 1975,
+      duration: "2 giờ 4 phút",
+      country: "Mỹ",
+      desc: "Cơn ác mộng biển sâu và nỗi sợ nguyên thủy."
+    }
+  ]
+},
+/* ===== PHIM HÀI HƯỚC ĐẶC SẮC ===== */
+{
+  title: "😂 Phim hài hước đặc sắc",
+  movies: [
+    {
+      name: "Nhà Gia Tiên",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/nha-gia-tien-13528-thumb.webp",
+      rating: 4.1,
+      year: 2024,
+      duration: "1 giờ 45 phút",
+      country: "Việt Nam",
+      desc: "Tiếng cười pha lẫn cảm xúc gia đình và tâm linh."
+    },
+    {
+      name: "Bánh Mỹ: Tái Ngộ",
+      img: "https://image.tmdb.org/t/p/w600_and_h900_face/de5QBIdVR4dnkBZ4a0zjkS4lTg.jpg",
+      rating: 3.9,
+      year: 2023,
+      duration: "1 giờ 38 phút",
+      country: "Việt Nam",
+      desc: "Cuộc hội ngộ dở khóc dở cười của những người bạn cũ."
+    },
+    {
+      name: "Bánh Mỹ",
+      img: "https://i1-giaitri.vnecdn.net/2011/06/12/american-pie-1999-09-g-1345762877.jpg?w=480&h=0&q=100&dpr=1&fit=crop&s=cPfnWAdf0crrLo0LDNfPvw",
+      rating: 3.8,
+      year: 2022,
+      duration: "1 giờ 35 phút",
+      country: "Việt Nam",
+      desc: "Hài hước, gần gũi với cuộc sống đời thường."
+    },
+    {
+      name: "Nhà Bà Nữ",
+      img: "https://cinema.momocdn.net/img/90230048152521353-kOvKHespgDEfzbYpq1cas2i8EZn.jpg",
+      rating: 4.2,
+      year: 2023,
+      duration: "1 giờ 58 phút",
+      country: "Việt Nam",
+      desc: "Mâu thuẫn gia đình được kể bằng góc nhìn hài – đời."
+    },
+    {
+      name: "Ngài Bean",
+      img: "https://upload.wikimedia.org/wikipedia/vi/3/37/Bean_movie_poster.jpg",
+      rating: 4.6,
+      year: 1997,
+      duration: "1 giờ 30 phút",
+      country: "Anh",
+      desc: "Huyền thoại hài không lời với những tình huống kinh điển."
+    },
+    {
+      name: "Bố Già",
+      img: "https://baoquocte.vn/stores/news_dataimages/kimchung/032021/13/15/phim-bo-gia-cua-tran-thanh-hay-nhung-chua-phai-tuyet-tac.jpg",
+      rating: 4.5,
+      year: 2021,
+      duration: "2 giờ 8 phút",
+      country: "Việt Nam",
+      desc: "Hài xen lẫn nước mắt – câu chuyện gia đình sâu sắc."
+    }
+  ]
+},
+/* ===== PHIM TÌNH CẢM LÃNG MẠN ===== */
+{
+  title: "💖 Phim tình cảm lãng mạn",
+  movies: [
+    {
+      name: "Cô Dâu Đại Chiến",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/co-dau-dai-chien-phim-ngan-21241-thumb.webp",
+      rating: 3.8,
+      year: 2011,
+      duration: "1 giờ 50 phút",
+      country: "Việt Nam",
+      desc: "Cuộc đối đầu hài hước giữa tình yêu và hôn nhân."
+    },
+    {
+      name: "100 Ngày Bên Em",
+      img: "https://upload.wikimedia.org/wikipedia/vi/7/77/100_ng%C3%A0y_b%C3%AAn_em.jpg  ",
+      rating: 4.0,
+      year: 2018,
+      duration: "1 giờ 40 phút",
+      country: "Việt Nam",
+      desc: "Hành trình tình yêu ngọt ngào và đầy cảm xúc."
+    },
+    {
+      name: "Chàng Trai Năm Ấy",
+      img: "https://upload.wikimedia.org/wikipedia/vi/4/4f/%C3%81p_ph%C3%ADch_phim_Ch%C3%A0ng_trai_n%C4%83m_%E1%BA%A5y.jpg",
+      rating: 4.2,
+      year: 2014,
+      duration: "1 giờ 50 phút",
+      country: "Việt Nam",
+      desc: "Tình yêu tuổi trẻ, ước mơ và sự trưởng thành."
+    },
+    {
+      name: "Nụ Hôn Thần Chết",
+      img: "https://upload.wikimedia.org/wikipedia/vi/f/f6/Nhtc11.jpg",
+      rating: 4.1,
+      year: 2008,
+      duration: "1 giờ 45 phút",
+      country: "Việt Nam",
+      desc: "Lãng mạn pha giả tưởng về tình yêu vượt ranh giới."
+    },
+    {
+      name: "Yêu Là Phải Xài Chiêu",
+      img: "https://static2.vieon.vn/vieplay-image/poster_v4/2025/11/13/18fdbfgk_yeulaphaixaichieu_660x946.jpg",
+      rating: 3.9,
+      year: 2016,
+      duration: "1 giờ 48 phút",
+      country: "Việt Nam",
+      desc: "Tình yêu hiện đại với những chiêu trò dở khóc dở cười."
+    },
+    {
+      name: "Yêu Em Bất Chấp",
+      img: "https://cdn2.tuoitre.vn/thumb_w/730/2018/4/7/photo-1-1523093260873278661021.jpg",
+      rating: 4.0,
+      year: 2017,
+      duration: "1 giờ 52 phút",
+      country: "Hàn Quốc",
+      desc: "Câu chuyện yêu thương vượt qua mọi rào cản."
+    }
+  ]
+},
+/* ===== PHIM HOẠT HÌNH VUI NHỘN ===== */
+{
+  title: "🐼 Phim hoạt hình vui nhộn",
+  movies: [
+    {
+      name: "Kung Fu Gấu Trúc",
+      img: "https://upload.wikimedia.org/wikipedia/vi/1/18/Kung_fu_panda_poster.jpg",
+      rating: 4.6,
+      year: 2008,
+      duration: "1 giờ 32 phút",
+      country: "Mỹ",
+      desc: "Chú gấu trúc Po vụng về trở thành cao thủ kung fu."
+    },
+    {
+      name: "Kung Fu Gấu Trúc 2",
+      img: "https://img.youtube.com/vi/SnJDeogd5zo/sddefault.jpg",
+      rating: 4.7,
+      year: 2011,
+      duration: "1 giờ 30 phút",
+      country: "Mỹ",
+      desc: "Po đối mặt quá khứ và kẻ thù nguy hiểm hơn."
+    },
+    {
+      name: "Madagascar 3: Thần Tượng Châu Âu",
+      img: "https://cdn.moveek.com/storage/media/cache/short/weI7UkZnIs.jpg",
+      rating: 4.4,
+      year: 2012,
+      duration: "1 giờ 33 phút",
+      country: "Mỹ",
+      desc: "Nhóm bạn động vật khuấy đảo rạp xiếc châu Âu."
+    },
+    {
+      name: "Đẳng Cấp Thú Cưng 2",
+      img: "https://boxofficevietnam.com/wp-content/uploads/2019/05/5c204620a84cb745296939.jpg",
+      rating: 4.2,
+      year: 2019,
+      duration: "1 giờ 26 phút",
+      country: "Mỹ",
+      desc: "Cuộc sống bí mật của thú cưng tiếp tục đầy tiếng cười."
+    },
+    {
+      name: "Người Nhện: Vũ Trụ Mới",
+      img: "https://upload.wikimedia.org/wikipedia/vi/8/82/Nguoinhenvutrumoi.png",
+      rating: 4.8,
+      year: 2018,
+      duration: "1 giờ 57 phút",
+      country: "Mỹ",
+      desc: "Nhiều Spider-Man cùng hội tụ trong đa vũ trụ."
+    },
+    {
+      name: "Đẳng Cấp Thú Cưng",
+      img: "https://upload.wikimedia.org/wikipedia/vi/6/64/The_Secret_Life_of_Pets_poster.jpg",
+      rating: 4.3,
+      year: 2016,
+      duration: "1 giờ 27 phút",
+      country: "Mỹ",
+      desc: "Bí mật hài hước của các thú cưng khi chủ vắng nhà."
+    }
+  ]
+},
+/* ===== PHIM TÀI LIỆU CHÂN THỰC ===== */
+{
+  title: "🎬 Phim tài liệu chân thực",
+  movies: [
+    {
+      name: "Siêu Sao Điện Ảnh Hollywood: Brad Pitt",
+      img: "https://img-zlr1.tv360.vn/image1/2025/05/17/23/de6a787a/de6a787a-82cc-4c4d-a0ce-ed0ad0aac294_360_540.jpg",
+      rating: 4.5,
+      year: 2023,
+      duration: "49 phút",
+      country: "Mỹ",
+      desc: "Hành trình sự nghiệp và cuộc đời của biểu tượng Hollywood Brad Pitt."
+    },
+    {
+      name: "PuBao: Bảo Bối Của Ông",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/3/5/350x495-fubao.jpg",
+      rating: 4.2,
+      year: 2022,
+      duration: "1 giờ 35 phút",
+      country: "Hàn Quốc",
+      desc: "Câu chuyện cảm động về tình thân và những giá trị gia đình."
+    },
+    {
+      name: "Chặng Cuối Hành Trình Lịch Sử",
+      img: "https://photo.znews.vn/w1920/Uploaded/kbfhuo3/2023_01_18/lens_zing.JPG",
+      rating: 4.4,
+      year: 2021,
+      duration: "25 phút",
+      country: "Việt Nam",
+      desc: "Những khoảnh khắc then chốt khép lại các giai đoạn lịch sử quan trọng."
+    },
+    {
+      name: "Tổng Thống Barack Obama",
+      img: "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+      rating: 4.7,
+      year: 2020,
+      duration: "55 phút",
+      country: "Mỹ",
+      desc: "Chân dung vị tổng thống da màu đầu tiên của nước Mỹ."
+    },
+    {
+      name: "Tổng Thống Ronald Reagan",
+      img: "https://upload.wikimedia.org/wikipedia/commons/1/16/Official_Portrait_of_President_Reagan_1981.jpg",
+      rating: 4.3,
+      year: 2019,
+      duration: "40 phút",
+      country: "Mỹ",
+      desc: "Cuộc đời và dấu ấn chính trị của Ronald Reagan."
+    },
+    {
+      name: "Tổng Thống Bill Clinton",
+      img: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Bill_Clinton.jpg",
+      rating: 4.4,
+      year: 2018,
+      duration: "42 phút",
+      country: "Mỹ",
+      desc: "Những thăng trầm trong nhiệm kỳ của Tổng thống Bill Clinton."
+    }
+  ]
+},
+/* ===== ĐIỆN ẢNH VIỆT ===== */
+{
+  title: "🇻🇳 Điện ảnh Việt",
+  movies: [
+    {
+      name: "Làm Giàu Với Ma: Cuộc Chiến Hột Xoàn",
+      img: "https://rophimz.io/wp-content/uploads/2025/12/lam-giau-voi-ma-2-cuoc-chien-hot-xoan-21390-thumb.webp",
+      rating: 4.4,
+      year: 2024,
+      duration: "1 giờ 55 phút",
+      country: "Việt Nam",
+      desc: "Phim hài – tâm linh xoay quanh hành trình làm giàu đầy trớ trêu khi con người vô tình vướng vào thế giới của ma quỷ và những viên hột xoàn bí ẩn."
+    },
+    {
+      name: "Trái Tim Què Quặt",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/trai-tim-que-quat-20684-thumb.webp",
+      rating: 4.1,
+      year: 2022,
+      duration: "1 giờ 48 phút",
+      country: "Việt Nam",
+      desc: "Câu chuyện tâm lý – xã hội về những con người mang trong mình tổn thương, khát khao được yêu thương và chữa lành."
+    },
+    {
+      name: "Mang Mẹ Đi Bỏ",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/mang-me-di-bo-21206-thumb.webp",
+      rating: 4.5,
+      year: 2023,
+      duration: "1 giờ 58 phút",
+      country: "Việt Nam",
+      desc: "Bộ phim gia đình giàu cảm xúc, khai thác tình mẫu tử, sự hi sinh và những mâu thuẫn thế hệ trong xã hội hiện đại."
+    },
+    {
+      name: "Thám Tử Kiên: Kì Án Không Đầu",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/tham-tu-kien-ky-an-khong-dau-1750-thumb.webp",
+      rating: 4.6,
+      year: 2024,
+      duration: "2 giờ",
+      country: "Việt Nam",
+      desc: "Phim trinh thám – kinh dị với vụ án rùng rợn không đầu, nơi thám tử Kiên phải đối mặt với những bí mật đen tối và sự thật gây sốc."
+    },
+    {
+      name: "Bộ Tứ Báo Thủ",
+      img: "https://rophimz.io/wp-content/uploads/2025/11/bo-tu-bao-thu-15846-thumb.webp",
+      rating: 4.0,
+      year: 2024,
+      duration: "1 giờ 40 phút",
+      country: "Việt Nam",
+      desc: "Hài hành động vui nhộn về bốn nhân vật bất đắc dĩ trở thành anh hùng, mang đến những tình huống dở khóc dở cười."
+    },
+    {
+      name: "Ngày Xưa Có Một Chuyện Tình",
+      img: "https://rophimz.io/wp-content/uploads/2025/12/ngay-xua-co-mot-chuyen-tinh-23281-thumb.webp",
+      rating: 4.7,
+      year: 2022,
+      duration: "1 giờ 55 phút",
+      country: "Việt Nam",
+      desc: "Chuyện tình thanh xuân trong trẻo, đầy hoài niệm về những rung động đầu đời và sự dang dở của tuổi trẻ."
+    }
+  ]
+},
+/* ===== MÙA HÈ CỨ RƠI ===== */
+{
+  title: "🌧️ Mùa hè cứ rơi",
+  movies: [
+    {
+      name: "Quả Tim Máu",
+      img: "https://upload.wikimedia.org/wikipedia/vi/c/c9/QuatimmauPoster.jpg",
+      rating: 4.4,
+      year: 2014,
+      duration: "1 giờ 30 phút",
+      country: "Việt Nam",
+      desc: "Phim kinh dị – tâm lý xoay quanh những ký ức bị chôn vùi và sự thật rùng rợn gắn liền với một ca ghép tim."
+    },
+    {
+      name: "Có Căn Nhà Nằm Nghe Nắng Mưa",
+      img: "https://i.ytimg.com/vi/PlCcaw3ds-Y/maxresdefault.jpg",
+      rating: 4.2,
+      year: 2019,
+      duration: "1 giờ 45 phút",
+      country: "Việt Nam",
+      desc: "Câu chuyện nhẹ nhàng về tình người, ký ức tuổi thơ và những khoảng lặng bình yên giữa dòng đời."
+    },
+    {
+      name: "Sài Gòn Trong Cơn Mưa",
+      img: "https://static2.vieon.vn/vieplay-image/poster_v4/2025/04/08/q95z2g1u_660x946-saigontrongconmua.jpg",
+      rating: 4.1,
+      year: 2020,
+      duration: "1 giờ 38 phút",
+      country: "Việt Nam",
+      desc: "Bức tranh cảm xúc về Sài Gòn, nơi những cơn mưa gắn liền với kỷ niệm, tình yêu và sự chia ly."
+    },
+    {
+      name: "Em Gái Mưa: The Movie",
+      img: "https://kenh14cdn.com/2017/2366892414144008919911585014874377125811873o-1511190700020.jpg",
+      rating: 4.0,
+      year: 2021,
+      duration: "1 giờ 40 phút",
+      country: "Việt Nam",
+      desc: "Phiên bản điện ảnh của câu chuyện tình yêu đơn phương, đầy day dứt và cảm xúc tuổi trẻ."
+    },
+    {
+      name: "Mùa Hè Đẹp Nhất",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/3/5/350x495-mhdn.jpg",
+      rating: 4.3,
+      year: 2022,
+      duration: "1 giờ 50 phút",
+      country: "Việt Nam",
+      desc: "Thanh xuân, tình bạn và những rung động đầu đời trong mùa hè không thể nào quên."
+    },
+    {
+      name: "Thảm Họa Mưa Axit",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/p/o/poster-m_a_axit_1_.jpg",
+      rating: 3.9,
+      year: 2023,
+      duration: "1 giờ 35 phút",
+      country: "Mỹ",
+      desc: "Phim thảm họa kịch tính khi mưa axit bất ngờ tàn phá thành phố, đẩy con người vào cuộc chiến sinh tồn."
+    }
+  ]
+},
+/* ===== QUYỀN CƯỚC VÔ TÌNH ===== */
+{
+  title: "🥊 Quyền cước vô tình",
+  movies: [
+    {
+      name: "Dòng Máu Anh Hùng",
+      img: "https://upload.wikimedia.org/wikipedia/vi/3/3f/Dong_mau_anh_hung.jpg",
+      rating: 4.5,
+      year: 2007,
+      duration: "1 giờ 43 phút",
+      country: "Việt Nam",
+      desc: "Phim hành động võ thuật đỉnh cao của điện ảnh Việt, xoay quanh cuộc chiến khốc liệt giữa nghĩa khí, phản bội và danh dự."
+    },
+    {
+      name: "Vây Hãm: Kẻ Trừng Phạt",
+      img: "https://upload.wikimedia.org/wikipedia/vi/b/b5/THE_ROUNDUP_PUNISHMENT_-_Vietnam_poster.jpg",
+      rating: 4.2,
+      year: 2019,
+      duration: "1 giờ 35 phút",
+      country: "Hàn Quốc",
+      desc: "Cuộc đối đầu căng thẳng giữa lực lượng an ninh và tên tội phạm nguy hiểm trong một chiến dịch vây hãm nghẹt thở."
+    },
+    {
+      name: "Vây Hãm: Không Lối Thoát",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/l/a/launching_poster-art-4x5.jpg",
+      rating: 4.3,
+      year: 2021,
+      duration: "1 giờ 40 phút",
+      country: "Mỹ",
+      desc: "Phần tiếp theo đầy bạo lực và kịch tính, nơi nhân vật chính phải chiến đấu đến cùng để sống sót."
+    },
+    {
+      name: "Người Hùng Cuối Cùng",
+      img: "https://static.aircms.xyz/storage/images/nguoi-hung-cuoi-cung/nguoi-hung-cuoi-cung-thumb.webp",
+      rating: 4.1,
+      year: 2013,
+      duration: "1 giờ 47 phút",
+      country: "Mỹ",
+      desc: "Hành trình của một người hùng già nua buộc phải trở lại chiến đấu khi công lý bị đe dọa."
+    },
+    {
+      name: "Đấu Trường Đẫm Máu",
+      img: "https://static.aircms.xyz/storage/images/dau-truong-dam-mau/dau-truong-dam-mau-thumb.webp",
+      rating: 4.0,
+      year: 2018,
+      duration: "1 giờ 32 phút",
+      country: "Mỹ",
+      desc: "Những trận đấu sinh tử trong đấu trường ngầm, nơi chỉ kẻ mạnh nhất mới có thể sống sót."
+    },
+    {
+      name: "Bẫy Rồng",
+      img: "https://upload.wikimedia.org/wikipedia/vi/7/7a/Bay_rong.jpg",
+      rating: 4.4,
+      year: 2010,
+      duration: "1 giờ 45 phút",
+      country: "Hồng Kông",
+      desc: "Phim hành động võ thuật mãn nhãn với các pha cận chiến dữ dội và âm mưu đen tối trong thế giới ngầm."
+    }
+  ]
+},
+/* ===== HƯƠNG CẢNG MỘT THỜI HOÀNG KIM ===== */
+{
+  title: "🌆 Hương Cảng một thời hoàng kim",
+  movies: [
+    {
+      name: "Xé Gió",
+      img: "https://static2.vieon.vn/vieplay-image/carousel_web_v4/2025/11/05/tzcrd7kd_tothefore_1920x1080_1920_1080.jpg",
+      rating: 4.4,
+      year: 2018,
+      duration: "1 giờ 40 phút",
+      country: "Hồng Kông",
+      desc: "Phim hành động – đua xe nghẹt thở, nơi tốc độ, danh vọng và tham vọng va chạm trong thế giới ngầm."
+    },
+    {
+      name: "Báo Ứng",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/k/a/karma_poster_1_.jpg",
+      rating: 4.2,
+      year: 2011,
+      duration: "1 giờ 55 phút",
+      country: "Hồng Kông",
+      desc: "Câu chuyện tội phạm u ám xoay quanh luật nhân quả, sự trả giá và những bí mật bị chôn giấu."
+    },
+    {
+      name: "Hỏa Long Đối Quyết",
+      img: "https://plas-farm.co.uk/storage/images/hoa-long-doi-quyet/hoa-long-doi-quyet-thumb.webp",
+      rating: 4.3,
+      year: 2010,
+      duration: "1 giờ 50 phút",
+      country: "Hồng Kông",
+      desc: "Cuộc đối đầu căng thẳng giữa cảnh sát và tội phạm, nơi ranh giới thiện – ác trở nên mong manh."
+    },
+    {
+      name: "Kẻ Chỉ Điểm",
+      img: "https://bhdstarcinema.wordpress.com/wp-content/uploads/2010/11/poster-kechidiem.jpg",
+      rating: 4.5,
+      year: 2009,
+      duration: "1 giờ 45 phút",
+      country: "Hồng Kông",
+      desc: "Thế giới ngầm Hương Cảng hiện lên khốc liệt qua thân phận của những kẻ sống giữa hai làn ranh."
+    },
+    {
+      name: "Đơn Thân Nam Nữ",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS10ZYtY41m0twetIKVeusZ8ddXCVfFeV8xOA&s",
+      rating: 4.1,
+      year: 2011,
+      duration: "1 giờ 55 phút",
+      country: "Hồng Kông",
+      desc: "Phim tình cảm – đô thị hiện đại, xoay quanh tình yêu, sự cô đơn và lựa chọn của người trưởng thành."
+    },
+    {
+      name: "Nhân Chứng",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6KoG3MB9mUNbqeLrodw5HNZsYMXdpTlfWYQ&s",
+      rating: 4.2,
+      year: 2012,
+      duration: "1 giờ 35 phút",
+      country: "Hồng Kông",
+      desc: "Một vụ án bí ẩn được hé lộ qua lời kể của nhân chứng duy nhất, đầy kịch tính và bất ngờ."
+    }
+  ]
+},
+/* ===== HƯƠNG CẢNG MỘT THỜI HOÀNG KIM ===== */
+{
+  title: "🌆 Hương Cảng một thời hoàng kim",
+  movies: [
+    {
+      name: "Mai Lan Phương",
+      img: "https://static2.vieon.vn/vieplay-image/thumbnail_big_v4/2025/10/31/akk3i2pr_foreverenthralled_1920x1080_1267_712.webp",
+      rating: 4.3,
+      year: 2008,
+      duration: "2 giờ 15 phút",
+      country: "Hồng Kông",
+      desc: "Phim tiểu sử – nghệ thuật tái hiện cuộc đời huyền thoại của kinh kịch Mai Lan Phương giữa thời loạn."
+    },
+    {
+      name: "Bao La Vùng Trời",
+      img: "https://static.wikia.nocookie.net/voiceacting/images/d/d0/%C3%81p_ph%C3%ADch_phim_Bao_la_v%C3%B9ng_tr%E1%BB%9Di.webp/revision/latest?cb=20221212012704&path-prefix=vi",
+      rating: 4.1,
+      year: 2007,
+      duration: "1 giờ 58 phút",
+      country: "Hồng Kông",
+      desc: "Câu chuyện tình yêu và khát vọng tuổi trẻ giữa bầu trời rộng lớn của những ước mơ dang dở."
+    },
+    {
+      name: "Rượu Cốt Người",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/7/0/700x1000_6__1.jpg",
+      rating: 4.0,
+      year: 2004,
+      duration: "1 giờ 40 phút",
+      country: "Hồng Kông",
+      desc: "Phim kinh dị – tâm linh rùng rợn xoay quanh những nghi lễ bí ẩn và hậu quả đáng sợ."
+    },
+    {
+      name: "Ma Cảnh",
+      img: "https://images.danet.vn/images/src/bcc/c44/4e2b0267e6e2ac79340f0fe358dc0651.jpg",
+      rating: 4.2,
+      year: 2002,
+      duration: "1 giờ 35 phút",
+      country: "Hồng Kông",
+      desc: "Thế giới âm dương giao thoa trong những vụ án kỳ bí, đầy ám ảnh và bất ngờ."
+    },
+    {
+      name: "Trùng Khánh Sâm Lâm",
+      img: "https://upload.wikimedia.org/wikipedia/vi/c/c0/Chungking_Express.jpg",
+      rating: 4.6,
+      year: 1994,
+      duration: "1 giờ 42 phút",
+      country: "Hồng Kông",
+      desc: "Tác phẩm kinh điển của Vương Gia Vệ về cô đơn, tình yêu và nhịp sống Hương Cảng."
+    },
+    {
+      name: "Xuân Quang Xạ Tiết",
+      img: "https://assets.glxplay.io/images/w600/title/happy-together_web_posterPortrait_d2f251f539bfc33a7ddbe785ed81f9f8.jpg",
+      rating: 4.5,
+      year: 1997,
+      duration: "1 giờ 36 phút",
+      country: "Hồng Kông",
+      desc: "Câu chuyện tình đầy day dứt giữa hai người đàn ông, đẹp, buồn và ám ảnh."
+    }
+  ]
+},
+/* ===== MÙA THU LỘNG GIÓ ===== */
+{
+  title: "🍂 Mùa thu lộng gió",
+  movies: [
+    {
+      name: "Kẻ Du Hành Trên Mây",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/t/h/the-aeronauts-vietnamese-official-poster_1_.jpg",
+      rating: 4.2,
+      year: 2020,
+      duration: "1 giờ 50 phút",
+      country: "Việt Nam",
+      desc: "Hành trình khám phá bản thân, tự do và những ước mơ giữa bầu trời lộng gió."
+    },
+    {
+      name: "Mắt Biếc",
+      img: "https://vcdn1-giaitri.vnecdn.net/2019/11/21/MatBiec-Char-HaLan-teenage.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=TXnphqCBvXjba2dVUNJeag",
+      rating: 4.6,
+      year: 2019,
+      duration: "1 giờ 57 phút",
+      country: "Việt Nam",
+      desc: "Câu chuyện tình yêu đơn phương đầy day dứt, trong trẻo và ám ảnh theo năm tháng."
+    },
+    {
+      name: "Chuyện Tình Trên Non Cao",
+      img: "https://static.aircms.xyz/storage/images/chuyen-tinh-tren-non-cao/chuyen-tinh-tren-non-cao-thumb.webp",
+      rating: 4.1,
+      year: 2016,
+      duration: "1 giờ 42 phút",
+      country: "Việt Nam",
+      desc: "Tình yêu mộc mạc, chân thành của con người vùng cao giữa thiên nhiên hùng vĩ."
+    },
+    {
+      name: "Ngày Mai Sẽ Đến",
+      img: "https://phimmoi.com.vn/uploads/phim-moi-v1/10e89f2c7dcbf6d8baf097113209d102.jpg",
+      rating: 4.0,
+      year: 2021,
+      duration: "1 giờ 38 phút",
+      country: "Việt Nam",
+      desc: "Thông điệp lạc quan về hy vọng, niềm tin và những khởi đầu mới của cuộc sống."
+    },
+    {
+      name: "Mai",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/m/a/mai_poster_1stlook_70x100cm_vie_rgb.jpg",
+      rating: 3.9,
+      year: 2014,
+      duration: "1 giờ 45 phút",
+      country: "Việt Nam",
+      desc: "Góc nhìn chân thực về cuộc sống, số phận và tình người trong xã hội hiện đại."
+    },
+    {
+      name: "Tôi Thấy Hoa Vàng Trên Cỏ Xanh",
+      img: "https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/covers/0/c/0c2b0067691ef5521afcebe2887028dc_1442216317.jpg",
+      rating: 4.7,
+      year: 2015,
+      duration: "1 giờ 43 phút",
+      country: "Việt Nam",
+      desc: "Tuổi thơ trong veo, tình anh em và ký ức đẹp đẽ của làng quê Việt Nam."
+    }
+  ]
+},
+/* ===== PHỤ NỮ TRÊN MÀN BẠC ===== */
+{
+  title: "👩‍🦰 Phụ nữ trên màn bạc",
+  movies: [
+    {
+      name: "Kẻ Trộm Siêu Thị",
+      img: "https://static2.vieon.vn/vieplay-image/poster_v4/2025/11/14/xhuubcfh_shoplifters_660x946.png",
+      rating: 4.0,
+      year: 2020,
+      duration: "1 giờ 35 phút",
+      country: "Hàn Quốc",
+      desc: "Câu chuyện về người phụ nữ trẻ bị cuốn vào vòng xoáy tội lỗi khi mưu sinh giữa xã hội khắc nghiệt."
+    },
+    {
+      name: "Nhà Bà Nữ",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/t/e/teaser-film-nbn--copy_1_.jpg",
+      rating: 4.2,
+      year: 2023,
+      duration: "1 giờ 58 phút",
+      country: "Việt Nam",
+      desc: "Hình ảnh người mẹ Việt Nam mạnh mẽ, kiểm soát và đầy mâu thuẫn trong gia đình nhiều thế hệ."
+    },
+    {
+      name: "Người Mẹ",
+      img: "https://giadinh.mediacdn.vn/Images/Uploaded/Share/2010/06/17/mother5.jpg",
+      rating: 4.5,
+      year: 2019,
+      duration: "2 giờ",
+      country: "Hàn Quốc",
+      desc: "Tình mẫu tử thiêng liêng cùng sự hy sinh thầm lặng của người mẹ vì con cái."
+    },
+    {
+      name: "Sắc Đẹp Ngàn Cân",
+      img: "https://pic3.iqiyipic.com/image/20200826/93/c1/v_150228312_m_601_vi_m3_260_360.jpg",
+      rating: 4.3,
+      year: 2018,
+      duration: "2 giờ",
+      country: "Hàn Quốc",
+      desc: "Hành trình lột xác và tìm lại giá trị bản thân của người phụ nữ vượt qua định kiến ngoại hình."
+    },
+    {
+      name: "Yêu Em Bất Chấp",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/y/e/yebc406x600.jpg",
+      rating: 4.1,
+      year: 2017,
+      duration: "1 giờ 50 phút",
+      country: "Hàn Quốc",
+      desc: "Câu chuyện tình yêu lãng mạn, hài hước xoay quanh cô gái cá tính và chàng trai ngây ngô."
+    },
+    {
+      name: "Anne: Cô Gái Muôn Mặt",
+      img: "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/a/n/ann-teaser-poster-facebook_1_.jpg",
+      rating: 4.6,
+      year: 2018,
+      duration: "1 giờ 40 phút",
+      country: "Canada",
+      desc: "Câu chuyện truyền cảm hứng về cô bé Anne giàu trí tưởng tượng và khát vọng được yêu thương."
+    }
+  ]
+},
+/* ===== GIẢI MÃ KÌ ÁN ===== */
+{
+  title: "🕵️‍♂️ Giải mã kì án",
+  movies: [
+    {
+      name: "Hồ Sơ Bí Mật",
+      img: "https://images.fptplay53.net/media/photo/OTT/2025/12/22/ho-so-bi-mat-fpt-play-1724058826499landscape_1766374294049.webp?w=400",
+      rating: 4.3,
+      year: 2021,
+      duration: "1 giờ 55 phút",
+      country: "Hàn Quốc",
+      desc: "Những hồ sơ điều tra bị che giấu hé lộ mặt tối của tội ác và âm mưu phía sau sự thật."
+    },
+    {
+      name: "Lời Thú Tội Của Kẻ Sát Nhân",
+      img: "https://afamilycdn.com/k:thumb_w/600/Tnk9vRlUgEMOa9xiFyoQdi0bvg9Omj/Image/2013/08/movie_image-(1)-ff066/am-anh-voi-sat-nhan-thu-toi-cua-park-shi-hoo.jpg",
+      rating: 4.5,
+      year: 2019,
+      duration: "2 giờ",
+      country: "Nhật Bản",
+      desc: "Cuộc đấu trí căng thẳng giữa hung thủ và người truy tìm sự thật sau một lời thú tội gây sốc."
+    },
+    {
+      name: "Vụ Án Mạng Trong Biệt Thự Đá",
+      img: "https://static2.vieon.vn/vieplay-image/carousel_web_v4/2025/11/05/67m69ry8_thetoothandthenail_1920x1080_1920_1080.jpg",
+      rating: 4.1,
+      year: 2020,
+      duration: "1 giờ 45 phút",
+      country: "Anh",
+      desc: "Một vụ giết người bí ẩn trong biệt thự hẻo lánh kéo theo chuỗi nghi phạm đầy bất ngờ."
+    },
+    {
+      name: "Bẫy Nuốt Mạng",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_VZ5Q_-_M3T6G8qMV47arBiod1nmKdMgETA&s",
+      rating: 4.0,
+      year: 2022,
+      duration: "1 giờ 38 phút",
+      country: "Mỹ",
+      desc: "Trò chơi sinh tồn chết chóc nơi mỗi quyết định sai lầm đều phải trả giá bằng mạng sống."
+    },
+    {
+      name: "Cô Gái Trên Tàu",
+      img: "https://static2.vieon.vn/vieplay-image/poster_v4/2025/10/28/1t2k6mcm_thegirlonthetrain_660x946.png",
+      rating: 4.4,
+      year: 2016,
+      duration: "1 giờ 52 phút",
+      country: "Mỹ",
+      desc: "Người phụ nữ vô tình trở thành nhân chứng then chốt trong một vụ án mất tích đầy uẩn khúc."
+    },
+    {
+      name: "Dưới Hồ Nước Bạc",
+      img: "https://assets.glxplay.io/images/w600/title/under-the-silver-lake_web_posterPortrait_c3e3469a652e4fe581f85d870645192d.jpg",
+      rating: 4.2,
+      year: 2023,
+      duration: "1 giờ 47 phút",
+      country: "Trung Quốc",
+      desc: "Bí mật kinh hoàng được chôn giấu dưới mặt hồ tĩnh lặng, nơi sự thật dần trồi lên ánh sáng."
+    }
+  ]
+},
 
 
 ];
