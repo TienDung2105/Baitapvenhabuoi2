@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>VPlay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">VPlay</div>
+  <nav class="menu">
+    <a>Trang chủ</a>
+    <a>Phim bộ</a>
+    <a class="active">Phim lẻ</a>
+    <a>Anime</a>
+    <a>Phim chiếu rạp</a>
+  </nav>
+  <div class="actions">🔍 👤</div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Thực Ra Không Phải<br>Mối Tình Đầu</h1>
+    <p>Predestined Love</p>
+    <button class="btn-play">▶ Xem ngay</button>
+  </div>
+</section>
+
+<!-- BLOCK TEMPLATE -->
+<section class="block">
+  <div class="block-header">
+    <h2>Thịnh hành</h2>
+    <div class="nav-btns">
+      <button onclick="scrollRow('trending', -1)">❮</button>
+      <button onclick="scrollRow('trending', 1)">❯</button>
+    </div>
+  </div>
+  <div class="row-wrapper">
+    <div class="row" id="trending"></div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block-header">
+    <h2>Phim lẻ mới cập nhật</h2>
+    <div class="nav-btns">
+      <button onclick="scrollRow('anime', -1)">❮</button>
+      <button onclick="scrollRow('anime', 1)">❯</button>
+    </div>
+  </div>
+  <div class="row-wrapper">
+    <div class="row" id="anime"></div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="block-header">
+    <h2>Phim tâm lý đỉnh cao</h2>
+    <div class="nav-btns">
+      <button onclick="scrollRow('psychology', -1)">❮</button>
+      <button onclick="scrollRow('psychology', 1)">❯</button>
+    </div>
+  </div>
+  <div class="row-wrapper">
+    <div class="row" id="psychology"></div>
+  </div>
+</section>
+<section class="block">
+  <div class="block-header">
+    <h2>Phim tình cảm lãng mạn</h2>
+    <div class="nav-btns">
+      <button onclick="scrollRow('romance', -1)">❮</button>
+      <button onclick="scrollRow('romance', 1)">❯</button>
+    </div>
+  </div>
+  <div class="row-wrapper">
+    <div class="row" id="romance"></div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <h3>Công ty cổ phần nhóm 2</h3>
+      <p>:v</p>
+      <div class="footer-logo">VPlay</div>
+    </div>
+    <div class="footer-col">
+      <h4>Về VPlay</h4>
+      <a href="#">Giới thiệu</a>
+      <a href="#">Thông báo</a>
+    </div>
+    <div class="footer-col">
+      <h4>Liên hệ</h4>
+      <p>Hotline: <span>0364066116</span></p>
+      <p>Email: trankhanhtoan2006qt@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

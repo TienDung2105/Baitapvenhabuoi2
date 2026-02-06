@@ -1,0 +1,245 @@
+@import url("../../root.css");
+@import url("../../responsive.css");
+:root {
+    --bg-black: #141414;
+    --card-bg: #1f1f1f;
+    --primary-orange: #ff5722;
+    --text-main: #ffffff;
+    --text-gray: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-opensans);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: var(--black-smoke);
+    height: 5rem;
+}
+
+#logo {
+    font-size: 33px;
+    color: var(--brand-color);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+#options-container {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 20px;
+}
+
+#options-container a {
+    color: white !important;
+}
+
+.user-icon-container {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.829);
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.nav li:nth-of-type(1) a {
+    color: white !important;
+    font-weight: 700;
+}
+
+.nav li:hover a, #search-button:hover {
+    color: var(--brand-color) !important;
+    transition: color 0.3s ease;
+}
+
+#account-button {
+    cursor: pointer;
+}
+
+/* Main Body Styles */
+
+body {
+    background-color: var(--bg-black);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+.section-header{
+    margin-top: 12px;
+}
+
+.movie-header{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-main);
+    margin-left: 10px;
+}
+
+.icon{
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    background-color: var(--text-gray);
+}
+
+.icon i{
+    color: var(--text-main);
+}
+
+.movie-grid{
+    display: flex;
+    gap: 12px;
+    overflow: hidden; 
+    padding: 20px 10px 100px 10px;
+    transition: transform 0.45s ease;
+}
+
+.movie-card{
+    position: relative;
+    width: 300px;
+}
+
+.card{
+    min-height: 120px;
+    width: 100%;
+    transition: opacity 0.3s;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+}
+
+.title-label {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text-main);
+    text-align: left;
+    font-weight: bold;
+}
+
+.hover-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; 
+    height: 360px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 99;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10%) scale(0.9);
+    transform-origin: left top;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+}
+
+.movie-card:hover .hover-card {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(10%, -15%) scale(1);
+}
+
+.movie-card:hover .card {
+    opacity: 0;
+}
+
+.hover-banner {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hover-content {
+    padding: 12px;
+}
+
+.hover-content h3{
+    font-size: 18px;
+    color: var(--text-main);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.play-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.circle-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-main);
+}
+
+.hover-content h3 {
+    font-size: 16px;
+    margin: 5px 0 10px 0;
+}
+
+.meta {
+    font-size: 12px;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.rating {
+    color: #ffb400;
+}
+
+.desc {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

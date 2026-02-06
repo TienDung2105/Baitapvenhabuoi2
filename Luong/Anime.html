@@ -1,0 +1,133 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPlay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Anime.css" />
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="header-left">
+        <div id="logo">VPlay</div>
+    </div>
+    <nav class="nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Phim bộ</a>
+        <a href="#">Phim lẻ</a>
+        <a href="#" class="active">Anime</a>
+        <a href="#">Phim chiếu rạp</a>
+    </nav>
+    <div class="header-right">
+        <button class="icon-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="icon-btn avatar">
+            <img src="https://i.pravatar.cc/40" alt="avatar">
+        </button>
+    </div>
+</header>
+<div class="movie-hero-section">
+    <div class="hero-background" id="hero-background"></div>
+    <div class="hero-overlay-dark"></div>
+    <div class="hero-footer-content">
+        <div class="hero-info-box">
+            <h1 class="hero-title" id="hero-title"></h1>
+            <p class="hero-subtitle" id="hero-subtitle"></p>
+            <div class="hero-action-group">
+                <button class="btn-play-hero"><i class="fa fa-play"></i> Xem ngay</button>
+                <button class="btn-icon-hero"><i class="fa-regular fa-heart"></i></button>
+                <button class="btn-icon-hero"><i class="fa fa-share-nodes"></i></button>
+            </div>
+        </div>
+        <div class="hero-thumbnail-scroll">
+            <div class="hero-thumbnail-track" id="hero-thumbnail-track">
+            </div>
+        </div>
+    </div>
+</div>
+  <section class="film-section">
+    <h2 class="section-title">Thịnh hành hot 2025</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrev">‹</button>
+
+        <div class="film-row" id="trendingRow"></div>
+
+        <button class="arrow right" id="trendNext">›</button>
+    </div>
+</section>
+<section class="film-action">
+    <h2 class="section-title">NIềm Tin Chiến Thắng</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrevac">‹</button>
+
+        <div class="film-row" id="trendingRowac"></div>
+
+        <button class="arrow right" id="trendNextac">›</button>
+    </div>
+</section>
+<section class="film-humorous">
+    <h2 class="section-title">Chúa Tể Địa Ngục</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrevh">‹</button>
+
+        <div class="film-row" id="trendingRowh"></div>
+
+        <button class="arrow right" id="trendNexth">›</button>
+    </div>
+</section>
+<section class="film-ME">
+    <h2 class="section-title">Hoạt Hình Trung Quốc</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrevme">‹</button>
+
+        <div class="film-row" id="trendingRowme"></div>
+
+        <button class="arrow right" id="trendNextme">›</button>
+    </div>
+</section>
+<section class="film-HD">
+    <h2 class="section-title">Hành Động Đỉnh Cao</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrevhd">‹</button>
+
+        <div class="film-row" id="trendingRowhd"></div>
+
+        <button class="arrow right" id="trendNexthd">›</button>
+    </div>
+</section>
+<section class="film-PM">
+    <h2 class="section-title">Phiêu Lưu Mạo Hiểm</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrevpm">‹</button>
+
+        <div class="film-row" id="trendingRowpm"></div>
+
+        <button class="arrow right" id="trendNextpm">›</button>
+    </div>
+</section>
+<section class="film-TH">
+    <h2 class="section-title">Thanh Xuân Học Đường</h2>
+
+    <div class="slider-wrapper">
+        <button class="arrow left" id="trendPrevth">‹</button>
+
+        <div class="film-row" id="trendingRowth"></div>
+
+        <button class="arrow right" id="trendNextth">›</button>
+    </div>
+</section>
+    <script src="Anime.js"></script>
+</body>
+</html>
