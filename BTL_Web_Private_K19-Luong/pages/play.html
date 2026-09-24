@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đang xem phim - VPlay</title>
+    
+    <!-- Link đến CSS cũ của bạn để giữ Header/Nav -->
+    <link rel="stylesheet" href="Anime.css">
+    <!-- Link đến file CSS riêng cho trình phát -->
+    <link rel="stylesheet" href="play.css">
+</head>
+<body>
+        <header class="site-header">
+            <div class="header-left">
+                <div id="logo">VPlay</div>
+            </div>
+            <nav class="nav">
+                <a href="#">Trang chủ</a>
+                <a href="#">Phim bộ</a>
+                <a href="#">Phim lẻ</a>
+                <a href="#" class="active">Anime</a>
+                <a href="#">Phim chiếu rạp</a>
+            </nav>
+            <div class="header-right">
+                <button class="icon-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn avatar">
+                    <img src="https://i.pravatar.cc/40" alt="avatar">
+                </button>
+            </div>
+        </header>
+
+    <!-- 2. PHẦN TRÌNH PHÁT VIDEO -->
+    <main class="player-page">
+        <div class="container">
+            <!-- Khung chứa Video -->
+            <div class="video-container">
+                <iframe id="movie-iframe" src="" allowfullscreen frameborder="0"></iframe>
+            </div>
+
+            <!-- Thông tin phim bên dưới -->
+            <div class="movie-details">
+                <h1 id="movie-title">Đang tải tên phim...</h1>
+                <div class="movie-meta">
+                    <span id="movie-rating">⭐ 0.0</span> | 
+                    <span id="movie-year">2025</span> | 
+                    <span class="quality">Full HD</span>
+                </div>
+                <hr>
+                <div class="movie-desc">
+                    <h3>Nội dung phim:</h3>
+                    <p id="movie-description">Đang tải mô tả...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 3. NHÚNG CÁC FILE SCRIPT -->
+    <!-- Nhúng file chứa mảng phim của bạn trước -->
+    <script src="JS/Anime.js"></script> 
+    <!-- Nhúng file xử lý logic lấy ID sau -->
+    <script src="JS/play.js"></script>
+</body>
+</html>

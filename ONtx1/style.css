@@ -1,0 +1,129 @@
+/* Reset định dạng mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+/* Header màu vàng chanh */
+.header {
+    background-color: #ccff33;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+}
+
+.logo img {
+    width: 80px;
+    border: 1px solid #000;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.title h1 { color: #006600; font-size: 30px; }
+.title h2 { color: #006600; font-size: 20px; }
+
+/* Chia 2 cột dọc cho thân trang */
+.main_wrapper {
+    display: flex;
+    min-height: 500px;
+}
+
+/* Cột trái (Menu dọc xanh nhạt) */
+.sidebar_nav {
+    width: 25%;
+    background-color: #70ffff;
+    border-right: 1px solid #000;
+}
+
+.sidebar_nav ul {
+    list-style: none;
+}
+
+.sidebar_nav ul li {
+    position: relative; /* Quan trọng: Gốc để menu con bám vào */
+    border-bottom: 1px solid #000;
+}
+
+.sidebar_nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.sidebar_nav ul li:hover > a {
+    background-color: #c0c0c0; /* Đổi màu xám khi rà chuột */
+}
+
+/* Menu cấp 2 (Hiện sang bên phải) */
+.submenu {
+    display: none; /* Mặc định ẩn */
+    position: absolute;
+    left: 100%;    /* Đẩy sang phải 100% so với cha */
+    top: 0;        /* Nằm ngang hàng đỉnh của cha */
+    background-color: #c0c0c0;
+    min-width: 250px;
+    border: 1px solid #000;
+    z-index: 99;
+}
+
+.submenu li a {
+    color: blue !important;
+    font-weight: normal;
+    padding: 12px;
+}
+
+/* Hiện menu con khi hover */
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+/* Cột phải (Nội dung xanh lá) */
+.content {
+    width: 75%;
+    background-color: #00ff00;
+    padding: 20px;
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.book_section {
+    display: flex;
+    gap: 20px;
+}
+
+.book_image img {
+    width: 200px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.book_details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Footer màu xám */
+.footer {
+    background-color: #777;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #000;
+}

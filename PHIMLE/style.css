@@ -147,6 +147,18 @@ body {
   background: #06ad00;
 }
 
+
+.nav-btns button:first-child {
+    position: absolute;
+    right: 1445px;
+    top: 295px;
+} 
+.nav-btns button:last-child {
+    position: absolute;
+    top: 295px;
+}
+
+
 .row-wrapper {
   width: 100%;
   overflow: hidden;
@@ -204,7 +216,6 @@ body {
   gap: 100px;
 }
 
-/* LEFT */
 .footer-left h3 {
   font-size: 34px;        
   font-weight: 800;
@@ -224,7 +235,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* COLUMN */
 .footer-col h4 {
   font-size: 30px;        
   margin-bottom: 20px;
@@ -249,7 +259,6 @@ body {
   font-weight: 700;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .footer-inner {
     flex-direction: column;
@@ -317,7 +326,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* THUMB */
 .hero-thumbs {
   position: absolute;
   right: 40px;

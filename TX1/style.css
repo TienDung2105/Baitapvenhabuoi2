@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(207, 240, 22);
+}
+.logo{
+        border: 1px solid black;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.title{
+    text-align: center;
+    flex-grow: 1;
+}
+.navbar{
+    background-color: rgb(21, 235, 21);
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.main_content{
+    display: flex;
+    padding: 40px;
+}
+.main_content .left{
+    flex: 1;
+    padding: 20px;
+}
+.navbar_left{
+    width: 25%;
+}
+
+.content{
+    width: 75%;
+}
+.image{
+    display: flex;
+}
+.footer{
+    background-color: rgb(214, 207, 207);
+    text-align: center;
+    padding: 10px;
+}
+/* Thiết lập để menu cha làm gốc tọa độ */
+.navbar ul li {
+    position: relative;
+}
+
+/* Định dạng menu cấp 2 (Mặc định ẩn) */
+.submenu {
+    display: none;           /* Ẩn đi */
+    position: absolute;      /* Nằm đè lên nội dung phía dưới */
+    top: 100%;               /* Xuất hiện ngay dưới menu cha */
+    left: 0;
+    background-color: #f9f9f9; /* Màu nền menu con */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;             /* Đảm bảo nằm trên phần main_content */
+    list-style: none;
+    padding: 0;
+}
+
+/* Định dạng các mục trong menu con */
+.submenu li a {
+    color: #333 !important;  /* Đổi màu chữ sang đen cho dễ nhìn trên nền trắng */
+    padding: 10px 15px !important;
+    display: block;
+    font-size: 16px !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu li a:hover {
+    background-color: #ddd;  /* Hiệu ứng khi rà chuột vào menu con */
+}
+
+/* HIỆU ỨNG: Rà chuột vào cha thì hiện con */
+.has-submenu:hover .submenu {
+    display: block;
+}
