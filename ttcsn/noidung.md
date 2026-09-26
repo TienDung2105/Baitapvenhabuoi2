@@ -1,4 +1,4 @@
-Mình đã đọc tài liệu trong `HIT_JAVA_PRIVATE_2025.zip` và tổng hợp phần OOP theo đúng yêu cầu như sau.
+Lý thuyết
 
 **OOP Là Gì**
 
