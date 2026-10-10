@@ -366,15 +366,20 @@ button {
   }
 
   .hero__slide {
-    background-position: 58% center;
+    background-size: auto 100%;
+    transform: scale(1.025);
+  }
+
+  .hero__slide--history {
+    background-position: 55% center;
   }
 
   .hero__slide--space {
-    background-position: center center;
+    background-position: 52% center;
   }
 
   .hero__slide--archive {
-    background-position: 44% center;
+    background-position: 40% center;
   }
 
   .nav {
@@ -474,20 +479,25 @@ button {
 
 @media (max-width: 640px) {
   .hero {
+    width: 100%;
     min-height: 844px;
   }
 
   .hero__slide {
-    background-position: 63% center;
-    transform: scale(1.08);
+    background-size: auto 100%;
+    transform: scale(1.02);
+  }
+
+  .hero__slide--history {
+    background-position: 56% center;
   }
 
   .hero__slide--space {
-    background-position: center center;
+    background-position: 52% center;
   }
 
   .hero__slide--archive {
-    background-position: 47% center;
+    background-position: 38% center;
   }
 
   .hero__shade--side {
