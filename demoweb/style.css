@@ -366,20 +366,11 @@ button {
   }
 
   .hero__slide {
-    background-size: auto 100%;
-    transform: scale(1.025);
-  }
-
-  .hero__slide--history {
-    background-position: 55% center;
-  }
-
-  .hero__slide--space {
-    background-position: 52% center;
-  }
-
-  .hero__slide--archive {
-    background-position: 40% center;
+    background-color: #171008;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: none;
   }
 
   .nav {
@@ -484,20 +475,11 @@ button {
   }
 
   .hero__slide {
-    background-size: auto 100%;
-    transform: scale(1.02);
-  }
-
-  .hero__slide--history {
-    background-position: 56% center;
-  }
-
-  .hero__slide--space {
-    background-position: 52% center;
-  }
-
-  .hero__slide--archive {
-    background-position: 38% center;
+    background-color: #171008;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: none;
   }
 
   .hero__shade--side {
