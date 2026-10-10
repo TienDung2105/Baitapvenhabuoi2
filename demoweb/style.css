@@ -223,7 +223,8 @@ button {
 
 .hero__copy--bottom-left {
   align-self: flex-end;
-  width: min(54vw, 1040px);
+  width: min(50vw, 900px);
+  margin-left: clamp(78px, 5.8vw, 112px);
   margin-right: auto;
   padding-bottom: clamp(42px, 4vw, 70px);
   text-align: left;
@@ -231,8 +232,9 @@ button {
 
 .hero__copy--bottom-right {
   align-self: flex-end;
-  width: min(55vw, 1080px);
+  width: min(50vw, 940px);
   margin-left: auto;
+  margin-right: clamp(78px, 5.8vw, 112px);
   padding-bottom: clamp(36px, 3.4vw, 62px);
   text-align: right;
 }
@@ -261,13 +263,13 @@ button {
 .hero__copy--bottom-left .hero__eyebrow,
 .hero__copy--bottom-right .hero__eyebrow {
   margin-bottom: 14px;
-  font-size: clamp(30px, 2.3vw, 44px);
+  font-size: clamp(24px, 1.75vw, 34px);
   letter-spacing: .03em;
 }
 
 .hero__copy--bottom-left .hero__title,
 .hero__copy--bottom-right .hero__title {
-  font-size: clamp(62px, 5.25vw, 104px);
+  font-size: clamp(54px, 4.2vw, 82px);
   font-weight: 500;
   line-height: 1.08;
 }
@@ -310,6 +312,12 @@ button {
   fill: none;
   stroke: currentColor;
   stroke-width: 1.6;
+}
+
+.hero__arrow.is-hidden,
+.hero__next.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero__caption {

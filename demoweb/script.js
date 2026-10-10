@@ -48,6 +48,9 @@ function renderSlide(index) {
     dot.classList.toggle("is-active", dotIndex === currentSlide);
   });
 
+  prevButton.classList.toggle("is-hidden", currentSlide === 0);
+  nextButton.classList.toggle("is-hidden", currentSlide === slides.length - 1);
+
   heroCopy.className = `hero__copy ${content.copyClass}`;
   heroEyebrow.textContent = content.eyebrow;
   heroTitle.innerHTML = content.lines
