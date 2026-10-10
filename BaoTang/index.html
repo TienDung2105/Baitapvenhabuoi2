@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giao diện cổng thông tin Bảo tàng Lịch sử Quân sự Việt Nam được dựng bằng HTML, CSS và JavaScript thuần.">
+  <title>Bảo tàng Lịch sử Quân sự Việt Nam</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-strip">
+      <div class="container utility-strip__inner">
+        <span id="todayLabel">Chủ nhật, 04/10/2026</span>
+        <span class="utility-strip__notice">Đường dây nóng: <a href="tel:+842462532363">024 6253 2363</a></span>
+      </div>
+    </div>
+
+    <div class="masthead">
+      <div class="container masthead__inner">
+        <a class="brand" href="#" aria-label="Trang chủ Bảo tàng Lịch sử Quân sự Việt Nam">
+          <span class="brand__seal" aria-hidden="true">★</span>
+          <span class="brand__text">
+            <span class="brand__agency">BỘ QUỐC PHÒNG</span>
+            <strong>BẢO TÀNG LỊCH SỬ QUÂN SỰ VIỆT NAM</strong>
+            <small>Vietnam Military History Museum</small>
+          </span>
+        </a>
+
+        <div class="masthead__tools">
+          <button class="search-pill" type="button" data-open-search aria-label="Mở tìm kiếm">
+            <span aria-hidden="true">⌕</span>
+            <span>Tìm kiếm</span>
+          </button>
+          <div class="language-switch" aria-label="Chọn ngôn ngữ">
+            <a class="is-active" href="#">VIE</a>
+            <span>|</span>
+            <a href="#">ENG</a>
+          </div>
+          <a class="contact-shortcut" href="#visit">Tham quan</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Mở menu</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <div class="container">
+        <ul id="mainMenu" class="main-menu">
+          <li><a class="is-current" href="#">TRANG CHỦ</a></li>
+          <li class="has-dropdown">
+            <a href="#">GIỚI THIỆU</a>
+            <ul class="dropdown">
+              <li><a href="#">Lịch sử hình thành</a></li>
+              <li><a href="#">Chức năng nhiệm vụ</a></li>
+              <li><a href="#">Sơ đồ tổ chức</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#exhibitions">TRƯNG BÀY</a>
+            <ul class="dropdown">
+              <li><a href="#">Trưng bày thường xuyên</a></li>
+              <li><a href="#">Trưng bày chuyên đề</a></li>
+              <li><a href="#">Không gian ngoài trời</a></li>
+            </ul>
+          </li>
+          <li><a href="#artifacts">SƯU TẬP</a></li>
+          <li><a href="#">TƯ LIỆU - TÁC PHẨM</a></li>
+          <li class="has-dropdown">
+            <a href="#news">TIN TỨC - SỰ KIỆN</a>
+            <ul class="dropdown">
+              <li><a href="#">Tin bảo tàng</a></li>
+              <li><a href="#">Sự kiện</a></li>
+              <li><a href="#">Thông báo</a></li>
+            </ul>
+          </li>
+          <li><a href="#visit">THAM QUAN</a></li>
+          <li><a href="#footer">LIÊN HỆ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="search-modal" id="searchModal" aria-hidden="true">
+    <div class="search-modal__panel" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+      <button class="search-modal__close" type="button" data-close-search aria-label="Đóng tìm kiếm">×</button>
+      <h2 id="searchTitle">Tìm kiếm thông tin bảo tàng</h2>
+      <form class="search-form">
+        <input type="search" placeholder="Nhập từ khóa: hiện vật, triển lãm, sự kiện..." aria-label="Từ khóa tìm kiếm">
+        <button type="submit">Tìm kiếm</button>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" aria-label="Tin nổi bật">
+      <div class="hero-slider" id="heroSlider">
+        <article class="hero-slide is-active">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%C3%A2n%20S%E1%BB%B1%20Vi%E1%BB%87t%20Nam%202024.jpg" alt="Bảo tàng Lịch sử Quân sự Việt Nam">
+          <div class="hero-slide__content">
+            <span class="eyebrow">Tin nổi bật</span>
+            <h1>Bảo tàng Lịch sử Quân sự Việt Nam - điểm hẹn ký ức và niềm tự hào dân tộc</h1>
+            <p>Không gian trưng bày hiện đại tái hiện những mốc son trong lịch sử dựng nước, giữ nước và bảo vệ Tổ quốc.</p>
+            <div class="hero-slide__meta">
+              <time datetime="2026-10-04">04/10/2026</time>
+              <a class="btn btn--gold" href="#">Xem thêm</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/B%E1%BA%A3o%20t%C3%A0ng%20L%E1%BB%8Bch%20s%E1%BB%AD%20Qu%C3%A2n%20S%E1%BB%B1%20Vi%E1%BB%87t%20Nam%202024%20%287%29.jpg" alt="Không gian ngoài trời của bảo tàng">
+          <div class="hero-slide__content">
+            <span class="eyebrow">Trưng bày chuyên đề</span>
+            <h1>Những hiện vật lớn kể câu chuyện chiến thắng qua nhiều thế hệ</h1>
+            <p>Máy bay, xe tăng, pháo binh và tư liệu quý được tổ chức theo mạch lịch sử rõ ràng, dễ tiếp cận.</p>
+            <div class="hero-slide__meta">
+              <time datetime="2026-09-28">28/09/2026</time>
+              <a class="btn btn--gold" href="#">Xem thêm</a>
+            </div>
+          </div>
+        </article>
+        <article class="hero-slide">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/BTLSQSVN%20truoc%20su%20dung.png" alt="Toàn cảnh công trình bảo tàng">
+          <div class="hero-slide__content">
+            <span class="eyebrow">Hoạt động bảo tàng</span>
+            <h1>Không gian giáo dục truyền thống dành cho học sinh, chiến sĩ và du khách</h1>
+            <p>Các chương trình tham quan, tọa đàm, trải nghiệm số giúp lịch sử đến gần hơn với công chúng.</p>
+            <div class="hero-slide__meta">
+              <time datetime="2026-09-15">15/09/2026</time>
+              <a class="btn btn--gold" href="#">Xem thêm</a>
+            </div>
+          </div>
+        </article>
+
+        <button class="hero-control hero-control--prev" type="button" aria-label="Tin trước">‹</button>
+        <button class="hero-control hero-control--next" type="button" aria-label="Tin tiếp theo">›</button>
+        <div class="hero-dots" aria-label="Chọn slide"></div>
+      </div>
+    </section>
+
+    <section class="headline-ticker">
+      <div class="container headline-ticker__inner">
+        <strong>TIÊU ĐIỂM</strong>
+        <p>Nghiên cứu, quán triệt, triển khai các hoạt động giáo dục truyền thống và giới thiệu bảo vật quốc gia tại bảo tàng.</p>
+      </div>
+    </section>
+
+    <div class="container main-layout">
+      <div class="content-flow">
+        <section class="section-block" id="exhibitions">
+          <div class="section-heading">
+            <span>Khối trưng bày & hiện vật</span>
+            <h2>Hiện vật tiêu biểu</h2>
+          </div>
+          <div class="artifact-grid" id="artifacts">
+            <article class="artifact-card">
+              <a class="artifact-card__media" href="#">
+                <img src="https://images.unsplash.com/photo-1610890690846-5149750c8634?auto=format&fit=crop&w=900&q=80" alt="Máy bay quân sự trưng bày ngoài trời">
+                <span class="badge">Không gian ngoài trời</span>
+              </a>
+              <div class="artifact-card__body">
+                <time datetime="2026-10-02">02/10/2026</time>
+                <h3><a href="#">Sưu tập máy bay trong kháng chiến chống Mỹ</a></h3>
+                <p>Những hiện vật lớn gắn với chiến công bảo vệ bầu trời Tổ quốc.</p>
+              </div>
+            </article>
+            <article class="artifact-card">
+              <a class="artifact-card__media" href="#">
+                <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=900&q=80" alt="Xe tăng lịch sử">
+                <span class="badge">Bảo vật quốc gia</span>
+              </a>
+              <div class="artifact-card__body">
+                <time datetime="2026-09-24">24/09/2026</time>
+                <h3><a href="#">Xe tăng và biểu tượng của ngày toàn thắng</a></h3>
+                <p>Không gian giới thiệu phương tiện cơ giới, tư liệu và câu chuyện nhân chứng.</p>
+              </div>
+            </article>
+            <article class="artifact-card">
+              <a class="artifact-card__media" href="#">
+                <img src="https://images.unsplash.com/photo-1566159558981-a5a7a0f0fa72?auto=format&fit=crop&w=900&q=80" alt="Tài liệu bản đồ lịch sử">
+                <span class="badge">Tư liệu</span>
+              </a>
+              <div class="artifact-card__body">
+                <time datetime="2026-09-12">12/09/2026</time>
+                <h3><a href="#">Bản đồ Quyết tâm Chiến dịch Hồ Chí Minh</a></h3>
+                <p>Tư liệu đặc biệt phản ánh nghệ thuật chỉ đạo chiến dịch trong mùa Xuân 1975.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block news-section" id="news">
+          <div class="section-heading">
+            <span>Tin tức & sự kiện</span>
+            <h2>Cập nhật từ bảo tàng</h2>
+          </div>
+          <div class="tab-panel">
+            <div class="tabs" role="tablist" aria-label="Nhóm tin">
+              <button class="tab is-active" type="button" data-tab="museum">Tin Bảo Tàng</button>
+              <button class="tab" type="button" data-tab="event">Sự Kiện</button>
+              <button class="tab" type="button" data-tab="notice">Thông Báo</button>
+            </div>
+            <div class="tab-content is-active" data-tab-panel="museum">
+              <article class="media-news">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=400&q=80" alt="Hội nghị tại bảo tàng">
+                <div>
+                  <time datetime="2026-10-03">03/10/2026</time>
+                  <h3><a href="#">Đoàn tập huấn nghiệp vụ công tác Đoàn toàn quân tham quan, học tập tại bảo tàng</a></h3>
+                  <p>Chương trình góp phần bồi dưỡng nhận thức lịch sử, truyền thống và trách nhiệm của tuổi trẻ quân đội.</p>
+                </div>
+              </article>
+              <article class="media-news">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=400&q=80" alt="Trao thưởng tại hội trường">
+                <div>
+                  <time datetime="2026-09-30">30/09/2026</time>
+                  <h3><a href="#">Bảo tàng trao thưởng năm học 2025-2026 và vui Tết Trung thu</a></h3>
+                  <p>Hoạt động động viên con em cán bộ, nhân viên đạt thành tích trong học tập.</p>
+                </div>
+              </article>
+            </div>
+            <div class="tab-content" data-tab-panel="event">
+              <article class="media-news">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80" alt="Khách tham quan bảo tàng">
+                <div>
+                  <time datetime="2026-09-25">25/09/2026</time>
+                  <h3><a href="#">Triển lãm chuyên đề: Bản hùng ca mùa Xuân đại thắng</a></h3>
+                  <p>Chuỗi tư liệu và hiện vật tái hiện đỉnh cao của cuộc Tổng tiến công và nổi dậy Xuân 1975.</p>
+                </div>
+              </article>
+              <article class="media-news">
+                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80" alt="Sự kiện văn hóa">
+                <div>
+                  <time datetime="2026-09-19">19/09/2026</time>
+                  <h3><a href="#">Tọa đàm giáo dục truyền thống cho học sinh Thủ đô</a></h3>
+                  <p>Không gian trao đổi cùng nhân chứng lịch sử và cán bộ thuyết minh bảo tàng.</p>
+                </div>
+              </article>
+            </div>
+            <div class="tab-content" data-tab-panel="notice">
+              <article class="media-news">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=400&q=80" alt="Thông báo trực tuyến">
+                <div>
+                  <time datetime="2026-09-10">10/09/2026</time>
+                  <h3><a href="#">Thông báo lịch đón khách theo đoàn trong tháng 10</a></h3>
+                  <p>Khách tham quan theo đoàn vui lòng đăng ký trước để được bố trí thuyết minh viên.</p>
+                </div>
+              </article>
+              <article class="media-news">
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=400&q=80" alt="Lịch làm việc">
+                <div>
+                  <time datetime="2026-09-06">06/09/2026</time>
+                  <h3><a href="#">Hướng dẫn gửi hiện vật, tư liệu hiến tặng bảo tàng</a></h3>
+                  <p>Quy trình tiếp nhận, kiểm kê và bảo quản hiện vật được công bố để cá nhân, tổ chức thuận tiện liên hệ.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="sidebar" id="visit" aria-label="Thông tin tham quan">
+        <section class="visit-card">
+          <h2>Thông tin tham quan</h2>
+          <ul class="visit-list">
+            <li><strong>Giờ mở cửa</strong><span>08:00 - 11:30, 13:00 - 16:30</span></li>
+            <li><strong>Ngày phục vụ</strong><span>Thứ Ba đến Chủ nhật</span></li>
+            <li><strong>Địa chỉ</strong><span>Km 6+500 Đại lộ Thăng Long, Nam Từ Liêm, Hà Nội</span></li>
+            <li><strong>Liên hệ đoàn</strong><span>024 6253 2363</span></li>
+          </ul>
+          <a class="btn btn--red" href="#">Đăng ký tham quan ảo</a>
+          <a class="map-link" href="https://maps.google.com/?q=Vietnam%20Military%20History%20Museum%20Hanoi" target="_blank" rel="noreferrer">Mở bản đồ</a>
+        </section>
+
+        <section class="document-card">
+          <h2>Văn bản - tư liệu</h2>
+          <a href="#">Bảo vật quốc gia tại Bảo tàng LSQS Việt Nam</a>
+          <a href="#">Hướng dẫn tham quan dành cho trường học</a>
+          <a href="#">Quy định tiếp nhận hiện vật hiến tặng</a>
+        </section>
+      </aside>
+    </div>
+
+    <section class="three-showcase" aria-labelledby="threeTitle">
+      <div class="container three-showcase__inner">
+        <div class="section-heading section-heading--light">
+          <span>Virtual Artifacts</span>
+          <h2 id="threeTitle">Trải nghiệm hiện vật 3D</h2>
+        </div>
+        <div class="viewer-shell">
+          <div class="viewer-toolbar" aria-label="Điều khiển hiện vật 3D">
+            <button class="artifact-select is-active" type="button" data-artifact="stele">Bia đá</button>
+            <button class="artifact-select" type="button" data-artifact="vase">Bình gốm</button>
+            <button class="artifact-select" type="button" data-artifact="medal">Huân chương</button>
+            <button class="auto-rotate is-active" type="button" id="autoRotate">Auto-Rotate</button>
+          </div>
+          <div class="viewer-stage">
+            <canvas id="artifactCanvas" aria-label="Mô hình hiện vật 3D tương tác"></canvas>
+            <p id="artifactStatus" class="artifact-status" role="status" aria-live="polite" hidden></p>
+            <div class="artifact-info" id="artifactInfo">
+              <span>Hiện vật 3D</span>
+              <h3>Bia đá chiến công</h3>
+              <dl>
+                <div><dt>Niên đại</dt><dd>Thế kỷ XX</dd></div>
+                <div><dt>Chất liệu</dt><dd>Đá sa thạch</dd></div>
+                <div><dt>Kích thước</dt><dd>1.8m x 0.8m</dd></div>
+              </dl>
+              <p>Mô phỏng bia ghi dấu chiến công, đặt trên bệ trưng bày với ánh sáng bảo tàng.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="phuong-studio" id="phuong3d" aria-labelledby="phuongTitle">
+      <div class="container phuong-studio__heading">
+        <h2 id="phuongTitle">Phương <span>3D</span></h2>
+        <a href="assets/phuong.glb" download="Phuong.glb">Tải mô hình</a>
+      </div>
+      <div class="phuong-studio__stage">
+        <canvas id="phuongCanvas" aria-label="Mô hình chữ Phương 3D tương tác"></canvas>
+        <p id="phuongStatus" role="status" aria-live="polite">Đang tải mô hình…</p>
+        <div class="phuong-studio__tools" aria-label="Điều khiển chữ Phương 3D">
+          <button id="phuongRotate" type="button" aria-pressed="false">Tự xoay</button>
+          <button id="phuongReset" type="button" aria-label="Đặt lại góc nhìn" title="Đặt lại góc nhìn">↺</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="multimedia">
+      <div class="container">
+        <div class="section-heading section-heading--light">
+          <span>Multimedia</span>
+          <h2>Video & tham quan số</h2>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Tour bảo tàng">
+            <button type="button" aria-label="Phát video tour bảo tàng">▶</button>
+            <h3>Tour nhanh không gian trưng bày chính</h3>
+          </article>
+          <article class="video-card">
+            <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80" alt="Triển lãm ảo">
+            <button type="button" aria-label="Phát video triển lãm ảo">▶</button>
+            <h3>Triển lãm ảo: Dấu mốc bảo vệ Tổ quốc</h3>
+          </article>
+          <article class="video-card">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Không gian ngoài trời">
+            <button type="button" aria-label="Phát video hiện vật ngoài trời">▶</button>
+            <h3>Hiện vật lớn trong khu trưng bày ngoài trời</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Bảo tàng Lịch sử Quân sự Việt Nam</h2>
+        <p>Cơ quan chủ quản: Bộ Quốc phòng</p>
+        <p>Địa chỉ: Km 6+500 Đại lộ Thăng Long, Nam Từ Liêm, Hà Nội</p>
+        <p>Điện thoại: 024 6253 2363 · Email: trangtin.btlsqsvn@gmail.com</p>
+        <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp theo quy định hiện hành.</p>
+      </section>
+      <section>
+        <h2>Liên kết nhanh</h2>
+        <ul class="footer-links">
+          <li><a href="#">Giới thiệu bảo tàng</a></li>
+          <li><a href="#">Lịch tham quan</a></li>
+          <li><a href="#">Bảo vật quốc gia</a></li>
+          <li><a href="#">Tin tức - sự kiện</a></li>
+          <li><a href="#">Liên hệ công tác</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Kết nối</h2>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="RSS">rss</a>
+        </div>
+        <div class="visitor-counter">
+          <span>Lượt truy cập</span>
+          <strong>12,586,420</strong>
+        </div>
+        <p>© Bản quyền thuộc về Bảo tàng Lịch sử Quân sự Việt Nam</p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

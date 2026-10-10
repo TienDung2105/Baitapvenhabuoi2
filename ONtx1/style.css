@@ -52,7 +52,7 @@
 }
 
 .sidebar_nav ul li {
-    position: relative; /* Quan trọng: Gốc để menu con bám vào */
+    position: relative; /*: Gốc để menu con bám vào */
     border-bottom: 1px solid #000;
 }
 

@@ -1,105 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>VPlay</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảo Tàng Văn Học Việt Nam</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <section class="hero" aria-label="Bảo Tàng Văn Học Việt Nam">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide hero__slide--history is-active"></div>
+      <div class="hero__slide hero__slide--space"></div>
+      <div class="hero__slide hero__slide--archive"></div>
+    </div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+    <div class="hero__shade hero__shade--side" aria-hidden="true"></div>
+    <div class="hero__shade hero__shade--vertical" aria-hidden="true"></div>
 
-<header class="header">
-  <div class="logo">VPlay</div>
-  <nav class="menu">
-    <a>Trang chủ</a>
-    <a>Phim bộ</a>
-    <a class="active">Phim lẻ</a>
-    <a>Anime</a>
-    <a>Phim chiếu rạp</a>
-  </nav>
-  <div class="actions">🔍 👤</div>
-</header>
+    <header class="site-header">
+      <nav class="nav" aria-label="Điều hướng chính">
+        <button class="nav__menu-button" type="button" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Thực Ra Không Phải<br>Mối Tình Đầu</h1>
-    <p>Predestined Love</p>
-    <button class="btn-play">▶ Xem ngay</button>
-  </div>
-</section>
+        <div class="nav__group nav__group--left">
+          <a class="nav__search" href="#">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-3.5-3.5"></path>
+            </svg>
+            <span>Tìm Kiếm</span>
+          </a>
+          <a href="#">Tác Phẩm</a>
+          <a href="#">Trưng Bày</a>
+          <a href="#">Tin Tức</a>
+        </div>
 
-<!-- BLOCK TEMPLATE -->
-<section class="block">
-  <div class="block-header">
-    <h2>Thịnh hành</h2>
-    <div class="nav-btns">
-      <button onclick="scrollRow('trending', -1)">❮</button>
-      <button onclick="scrollRow('trending', 1)">❯</button>
-    </div>
-  </div>
-  <div class="row-wrapper">
-    <div class="row" id="trending"></div>
-  </div>
-</section>
+        <a class="nav__logo" href="#" aria-label="Bảo Tàng Văn Học Việt Nam">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M16 28h32M20 28v18M44 28v18M14 48h36M19 22l13-8 13 8M24 22h16M27 32v11M37 32v11M12 52h40" />
+            <path d="M10 24c7-2 12-5 22-11 10 6 15 9 22 11" />
+            <path d="M22 56h20" />
+          </svg>
+        </a>
 
-<section class="block">
-  <div class="block-header">
-    <h2>Phim lẻ mới cập nhật</h2>
-    <div class="nav-btns">
-      <button onclick="scrollRow('anime', -1)">❮</button>
-      <button onclick="scrollRow('anime', 1)">❯</button>
-    </div>
-  </div>
-  <div class="row-wrapper">
-    <div class="row" id="anime"></div>
-  </div>
-</section>
+        <div class="nav__group nav__group--right">
+          <a href="#">Tham Quan</a>
+          <a href="#">Sự Kiện</a>
+          <a href="#">Tác Giả</a>
+          <a class="nav__ticket" href="#">
+            <span>Mua Vé</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18l6-6-6-6"></path>
+            </svg>
+          </a>
+        </div>
 
-<section class="block">
-  <div class="block-header">
-    <h2>Phim tâm lý đỉnh cao</h2>
-    <div class="nav-btns">
-      <button onclick="scrollRow('psychology', -1)">❮</button>
-      <button onclick="scrollRow('psychology', 1)">❯</button>
-    </div>
-  </div>
-  <div class="row-wrapper">
-    <div class="row" id="psychology"></div>
-  </div>
-</section>
-<section class="block">
-  <div class="block-header">
-    <h2>Phim tình cảm lãng mạn</h2>
-    <div class="nav-btns">
-      <button onclick="scrollRow('romance', -1)">❮</button>
-      <button onclick="scrollRow('romance', 1)">❯</button>
-    </div>
-  </div>
-  <div class="row-wrapper">
-    <div class="row" id="romance"></div>
-  </div>
-</section>
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <h3>Công ty cổ phần nhóm 2</h3>
-      <p>:v</p>
-      <div class="footer-logo">VPlay</div>
-    </div>
-    <div class="footer-col">
-      <h4>Về VPlay</h4>
-      <a href="#">Giới thiệu</a>
-      <a href="#">Thông báo</a>
-    </div>
-    <div class="footer-col">
-      <h4>Liên hệ</h4>
-      <p>Hotline: <span>0364066116</span></p>
-      <p>Email: trankhanhtoan2006qt@gmail.com</p>
-    </div>
-  </div>
-</footer>
+        <a class="nav__ticket nav__ticket--mobile" href="#">
+          <span>Mua Vé</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 18l6-6-6-6"></path>
+          </svg>
+        </a>
+      </nav>
 
-<script src="app.js"></script>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Tìm Kiếm</a>
+        <a href="#">Tác Phẩm</a>
+        <a href="#">Trưng Bày</a>
+        <a href="#">Tin Tức</a>
+        <a href="#">Tham Quan</a>
+        <a href="#">Sự Kiện</a>
+        <a href="#">Tác Giả</a>
+      </div>
+    </header>
+
+    <main class="hero__content">
+      <div class="hero__copy hero__copy--left" id="heroCopy">
+        <p class="hero__eyebrow" id="heroEyebrow">Bảo Tàng Văn Học Việt Nam</p>
+        <h1 class="hero__title" id="heroTitle">
+          <span id="heroLine1">Văn Chương</span><br />
+          <span id="heroLine2">Ký Ức</span><br />
+          <span id="heroLine3">Việt Nam</span>
+        </h1>
+      </div>
+    </main>
+
+    <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Slide trước">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"></path>
+      </svg>
+    </button>
+
+    <button class="hero__next" type="button" aria-label="Slide tiếp theo">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9 18l6-6-6-6"></path>
+      </svg>
+    </button>
+
+    <p class="hero__caption" id="heroCaption">
+      Trước trụ sở Hội Văn Nghệ Việt Nam tại huyện Đại Từ, Thái Nguyên - 1949.<br />
+      Từ trái sang phải: Ngô Tất Tố, Nguyễn Xuân Sanh, Tô Hữu, Xuân Diệu, Thế Lữ, Nguyễn Huy Tưởng, Nguyễn Tuân
+    </p>
+
+    <div class="hero__dots" aria-label="Chuyển slide">
+      <button class="is-active" type="button" aria-label="Slide 1"></button>
+      <button type="button" aria-label="Slide 2"></button>
+      <button type="button" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
